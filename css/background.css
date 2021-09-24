@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.name { 
+    background-image: url("../img/ingreso2.png");
+    width: 95%;
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-position:right bottom;
+}
+body {
+    background-image: url("../img/luna.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@media only screen and (max-width: 800px) {
+    body {
+      background-image: url("../img/moon-b1.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+}
+@media only screen and (max-width: 600px) {
+    body {
+      background-image: url("../img/moon-b2.png");
+      background-repeat: no-repeat;
+    }
+}
