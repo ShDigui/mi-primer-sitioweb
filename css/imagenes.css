@@ -1,0 +1,36 @@
+
+* {
+    margin: 0;
+    padding:0;
+}
+.menu {
+    margin-top: 6em;
+}
+h1 {
+    text-align: center;
+}
+.img-principal {
+    display: block;
+    margin-left: auto;
+    margin: 0 auto;
+    margin-bottom: 1em;
+}
+.img-catalogo {
+    display: inline;
+    margin-left: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+.content-catalogo {
+    display: block;
+    margin: 0 auto;
+    width: 1200px;
+}
+.content-indiv {
+    display: inline-block;                  
+}
+p {
+    font-size: 1.7em;
+    text-align: center;
+    line-height: 1em;
+}

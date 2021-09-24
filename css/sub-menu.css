@@ -1,0 +1,62 @@
+* {
+	padding:0;
+	margin:0;
+}
+header h1 {
+	text-align: center;
+	 top:5em;
+}
+header {
+	width: 100%;
+}
+header nav {
+	background-color: rgb(9, 83, 76) ;
+    width: 100%;
+	margin:0 auto;
+    top: 5.4em;
+}
+
+header nav ul {
+	list-style:none;
+}
+
+header nav ul li {
+	display:inline-block;
+	position: relative;
+}
+
+header nav ul li:hover {
+    background: rgb(3, 75, 75);
+}
+header nav ul li a {
+	display:block;
+	text-decoration:none;
+	padding: 8px;
+}
+
+header nav ul li a span {
+	margin-right: 8px;
+}
+
+header nav ul li:hover .children {
+	display:block;
+}
+
+header nav ul li .children {
+	display: none;
+	background: rgb(3, 46, 46);
+	position: absolute;
+	width: 95%;
+}
+
+header nav ul li .children li {
+	display:block;
+	overflow: hidden;
+	border-bottom: 1px solid rgb(1, 75, 75);
+}
+
+
+
+
+
+

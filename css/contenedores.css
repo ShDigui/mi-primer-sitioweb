@@ -1,0 +1,48 @@
+
+* {
+    margin: 0;
+    padding:0;
+}
+.menu {
+    margin-top: 6em;
+}
+h1 {
+    text-align:center;
+}
+.mein-box {
+    display: block;
+    margin: 0 auto;
+    width: 853px;
+    text-align: center;
+}
+.box-1,.box-2,.box-3, .box-4, .box-5, .box-6 {
+    width: 250px;
+    height: 250px;
+    display: inline-block;
+    margin: 15px;
+    border-radius: 1em;
+}
+.box-1 {
+    background: darkcyan;
+    box-shadow: 10px 10px 10px rgb(1, 85, 85);
+}
+.box-2 {
+    background: goldenrod;
+    box-shadow: 10px 10px 10px rgb(136, 102, 15);
+}
+.box-3 {
+    background: red;
+    box-shadow: 10px 10px 10px rgb(129, 10, 10);
+}
+.box-4 {
+    background: gray;
+    box-shadow: 10px 10px 10px rgb(58, 56, 56);
+}
+.box-5 {
+    background:blue;
+    box-shadow: 10px 10px 10px rgb(4, 4, 102);
+}
+.box-6 {
+    background:green;
+    box-shadow: 10px 10px 10px rgb(6, 65, 6);
+}

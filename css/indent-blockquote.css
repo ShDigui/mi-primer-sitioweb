@@ -1,0 +1,34 @@
+
+* {
+    margin: 0;
+    padding:0;
+}
+.menu {
+    margin-top: 6em;
+}
+h1 {
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+p{
+    font-size: 1.8em;
+    text-align: justify;
+}
+.texto-identado {
+    text-indent: 2em;
+}
+.letra-especial{
+    font-size: 3em;
+    font-family: 'Permanent Marker', sans-serif;
+    line-height: 0.95em;
+}
+blockquote {
+    font-size: 2.5em;
+    font-style: italic;
+    color:rgb(48,48,48);
+    font-weight: 900;
+    font-family: 'benne',serif;
+    text-align: right;
+}

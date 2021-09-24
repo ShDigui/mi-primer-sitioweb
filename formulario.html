@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario.</title>
+    <link rel="stylesheet" href="css/formulario.css">
+    <link rel="stylesheet" href="css/main-menu.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="fuentes.html">Fuentes</a></li>
+        <li><a href="listas.html">Listas</a></li>
+        <li><a href="colores.html">Colores</a></li>
+        <li><a href="alineacion.html">Alineacion</a></li>
+        <li><a href="espacing.html">Espacing</a></li>
+        <li><a href="indent-blockquote.html">Indent y Blockquote</a></li>
+        <li><a href="margin-border-pading.html">Margins, Borders, Padding</a></li>
+        <li><a href="imagenes.html">Imagenes</a></li>
+        <li><a href="tablas.html">tablas</a></li>
+        <li><a href="formulario.html">Formulario</a></li>
+        <li><a href="contenedores.html">Contenedores</a></li>
+        <li><a href="menu-vertical.html">Menu Vertical</a></li>
+        <li><a href="sub-menu.html">Sub Menu</a></li>
+        <li><a href="menu-responsive.html">Menu Responsive</a></li>
+      </ul>
+    </nav>
+    <div class="menu">
+    <h1>Citas Medicas</h1>
+    <form>
+        <fieldset>
+            <div class="box-formulario">
+                 <label>ingrese su(s) nombre(s)</label><br>
+                <input class="controls" type="text" name="nombres"><br>
+                <label>ingrese su(s) apellido(s)</label><br>
+                <input class="controls" type="text" name="apellidos"> <br>  
+                <label>observaciones</label> <br> 
+                <textarea class="controls" name="observaciones" placeholder="escriba aqui sus observaciones (Max, 200 caracteres)"  cols="40" rows="7" maxlength="200"></textarea><br>
+                <label>ver dias disponibles</label><br><br>
+                <label>  <input class="controls-check"  type="checkbox" value="lunes">lunes</label><br>
+                <label>  <input class="controls-check"  type="checkbox" value="martes">Martes</label><br>
+                <label>  <input class="controls-check"  type="checkbox" value="miercoles">Miercoles</label><br>
+                <label>  <input class="controls-check"  type="checkbox" value="jueves">Jueves</label><br>
+                <label>  <input class="controls-check"  type="checkbox" value="viernes">Viernes</label><br><br>
+                <label>IPS de atencion</label> <br><br>
+                <label > <input class="controls-check" type="radio" name="IPS">IPS Centro </label><br>
+                <label > <input class="controls-check" type="radio" name="IPS">IPS Agua Blanca </label><br>
+                <label > <input class="controls-check" type="radio" name="IPS">IPS calamo </label><br>
+                <label > <input class="controls-check" type="radio" name="IPS">IPS Solarte </label><br><br>
+                <label>seleccione un medico</label><br><br>
+                <select class="controls" name="medico" >
+                            <option value="liliana-gomez">Liliana Yisela Gomez</option>
+                            <option value="jhon-alex-castanio">Jhon Alex Castaño</option>
+                            <option value="kevin-ijaji">Kevin Estiven Ijaji</option>
+                            <option value="ashley-jaramillo">Ashley Elizabeth Jaramillo</option>
+                </select><br><br> 
+                <input class="controls-boton" type="submit" value="Enviar">
+            </div>
+        </fieldset>
+    </form>
+  </div>
+</body>
+</html>

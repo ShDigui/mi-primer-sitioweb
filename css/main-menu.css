@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding:0;
+}
+nav{
+    position: fixed;
+    background-color: rgb(5, 70, 64) ;
+    cursor: pointer;
+    padding: 0;
+    top:0;
+}
+ul {
+    list-style: none;
+    font-size: 0.80em;
+    font-family: 'roboto',sans-serif;
+    text-align: right;
+    text-align: left;
+}
+li {
+    display: inline-block;
+    padding: 15px;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+li:hover {
+    background: rgb(12, 117, 117);
+}
+.main-content {
+    margin: 3.5em;
+}
+    

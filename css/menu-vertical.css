@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+header {
+   width: 100%;
+}
+header nav{
+   position: fixed;
+   background: rgb(150, 153, 153);
+   height: 100%;
+   width: 300px;
+   top: 5.4em;
+   border-right: 3px solid black;
+}
+header ul {
+   list-style: none;
+   position: absolute;
+   top: 40px;
+   left: 10px;
+   width: 290px;
+   
+}
+header a {
+text-decoration: none;
+color: rgb(64, 64, 64, .8);
+font-size: 1.2em;
+display: block;
+border-radius: 5px;
+padding: 35px;
+}
+header a:hover {
+   background: rgb(12, 155, 165);
+}
+header .main-content {
+   margin: 40px 40px 40px 320px;
+   text-align: justify;
+}
+header p {
+   font-size: 1.5em;
+   line-height: 1.6em;
+   font-family: cursive;
+
+}
+.fas, .fab {
+   width: 30px;
+   font-size: 1.2em;
+}
+header i {
+   padding-right: 30px;
+}
+.linea-item{
+   border-top: 4px solid black;
+}

@@ -1,0 +1,58 @@
+
+* {
+    margin: 0;
+    padding:0;
+}
+.menu {
+    margin-top: 6em;
+}
+body {
+    background-image: linear-gradient(to right ,#000000,#0f9b0f);
+}
+h1 {
+    text-align: center;
+    color: whitesmoke;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+fieldset {
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+    color: whitesmoke;
+    border-radius: 20px;
+}
+.box-formulario{
+    width: 80%;
+    display: block;
+    margin:  25px auto ;
+}
+.controls {
+    margin-bottom: 1.3em;
+    font-family: 'Roboto', sans-serif;font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+    color: rgb(185, 185, 185);
+    border-radius: 5px;
+    background-image: linear-gradient(to right ,#000000,#0f9b0f);
+}
+.controls-check {
+    font-family: 'Roboto', sans-serif;font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+    margin-top: .7em ;
+}
+label {
+    font-family:'Roboto', sans-serif;font-family: 'Roboto', sans-serif ;
+    font-size: 1.2em;
+}
+.controls-boton {
+    background-color: rgb(5, 70, 64) ;
+    margin-bottom: 1.3em;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    font-weight: 550;
+    color: whitesmoke;
+    border-radius: 5px;
+    height: 40px;
+    width: 600px;
+    cursor: pointer;
+}
