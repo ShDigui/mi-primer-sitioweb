@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+h1 {
+   text-align: center;
+}
 header {
    width: 100%;
 }
@@ -10,7 +13,7 @@ header nav{
    background: rgb(150, 153, 153);
    height: 100%;
    width: 300px;
-   top: 5.4em;
+   top: 0;
    border-right: 3px solid black;
 }
 header ul {

@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main-content {
+    width: 90%;
+    border: 8px solid rgb(23, 151, 92);
+    margin: 20px auto;
+}
+.container-flex1 {
+    display: flex;
+    flex-direction: column;
+    background: rgb(6, 173, 117);
+}
+.container-flex2 {
+    display: flex;
+    flex-direction: row;
+    background: rgb(6, 173, 117);
+}
+.container-flex3 {
+    display: flex;
+    flex-wrap: wrap;
+    background: rgb(6, 173, 117);
+}
+.container-flex4 {
+    display: flex;
+    flex-wrap: nowrap;
+    background: rgb(6, 173, 117);
+}
+.container-flex5 {
+    display: flex;
+    justify-content: space-between;
+    background: rgb(6, 173, 117);
+}
+.container-flex6 {
+    display: flex;
+    justify-content: space-between;
+    background: rgb(6, 173, 117);
+}
+.container-flex7{
+    display: flex;
+    justify-content: space-around;
+    background: rgb(6, 173, 117);
+}
+.container-flex8 {
+    display: flex;
+    justify-content: flex-start;
+    background: rgb(6, 173, 117);
+}
+.container-flex9 {
+    display: flex;
+    justify-content: flex-end;
+    background: rgb(6, 173, 117);
+}
+.container-flex10 {
+    display: flex;
+    justify-content: center;
+    background: rgb(6, 173, 117);
+}
+.container-flex11 {
+    display: flex;
+    align-items: flex-start;
+    background: rgb(6, 173, 117);
+    height: 800px;
+}
+.container-flex12 {
+    display: flex;
+    align-items: flex-end;
+    background: rgb(6, 173, 117);
+    height: 800px;
+}
+.container-flex13 {
+    display: flex;
+    background: rgb(6, 173, 117);
+    align-items: center;
+    justify-content: center;
+    height: 900px;
+}
+.container-flex14{
+    display: flex;
+    background: rgb(6, 173, 117);
+    align-items: center;
+    justify-content: center;
+    height: 900px;
+}
+.item-flex {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(36, 187, 142);
+    color: white;
+    font-size: 1.5em;
+    margin: 20px;
+}
