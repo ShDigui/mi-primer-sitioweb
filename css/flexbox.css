@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+header {
+    margin-top: 6em;
+}
 .main-content {
     width: 90%;
     border: 8px solid rgb(23, 151, 92);

@@ -1,0 +1,60 @@
+
+* {
+    margin: 0;
+    padding:0;
+}
+body {
+    background-image: url("../img/login-luna-f.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.menu {
+    margin-top: 15em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h1 {
+    text-align: center;
+    color: wheat;
+}
+fieldset {
+    width: 10%;
+    display: block;
+    margin: 0 auto;
+    color: wheat;
+    border-radius: 20px;
+}
+.box-formulario{
+    display: block;
+    margin:  25px auto ;
+}
+.controls {
+    margin-bottom: 1.3em;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+    color: rgb(56, 53, 53);
+    border-radius: 5px;
+}
+label {
+    font-family:'Roboto', sans-serif;
+    font-size: 1.2em;
+}
+.controls-boton {
+    background-color: rgb(5, 70, 64) ;
+    margin-bottom: 1em;
+    margin-left: 19%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    font-weight: 550;
+    color: rgb(174, 186, 207);
+    border-radius: 5px;
+    height: 30px;
+    width: 150px;
+    cursor: pointer;
+}
+p {
+    font-size: 1em;
+    color: rgb(9, 9, 109);
+    cursor: pointer;
+}
