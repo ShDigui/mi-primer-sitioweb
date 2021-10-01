@@ -6,6 +6,9 @@
 header .main-content {
     margin-top: 6em;
 }
+.territorium {
+    color: rgb(rgb(97, 12, 17), green, blue);
+}
 p {
     font-weight: 900;
     font-family: 'Amatic SC',cursive, sans-serif;
