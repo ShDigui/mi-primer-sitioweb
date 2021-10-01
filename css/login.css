@@ -16,13 +16,18 @@ body {
 }
 h1 {
     text-align: center;
-    color: wheat;
+    color: rgb(95, 13, 13);
+    font-family: 'Bungee Inline', cursive;
+    font-family: 'Rye', cursive;
+    font-size: 2em;
+    font-weight: 900;
 }
 fieldset {
-    width: 10%;
+    width: 50%;
     display: block;
+    padding: 15px 15px 15px 15px;
     margin: 0 auto;
-    color: wheat;
+    color: rgb(95, 13, 13);
     border-radius: 20px;
 }
 .box-formulario{
@@ -33,28 +38,38 @@ fieldset {
     margin-bottom: 1.3em;
     font-family: 'Roboto', sans-serif;
     font-size: 1.2em;
-    color: rgb(56, 53, 53);
+    background: rgba(137, 184, 228, 0.322);
     border-radius: 5px;
 }
 label {
-    font-family:'Roboto', sans-serif;
-    font-size: 1.2em;
+    font-family: 'Bungee Inline', cursive;
+    font-family: 'Rye', cursive;
+    font-size: 1.5em;
 }
 .controls-boton {
     background-color: rgb(5, 70, 64) ;
     margin-bottom: 1em;
     margin-left: 19%;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1em;
+    font-family: 'Bungee Inline', cursive;
+    font-family: 'Rye', cursive;
+    font-size: 1.1em;
     font-weight: 550;
-    color: rgb(174, 186, 207);
+    color: rgb(163, 173, 190);
     border-radius: 5px;
     height: 30px;
     width: 150px;
     cursor: pointer;
 }
 p {
+    font-family:'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
     font-size: 1em;
-    color: rgb(9, 9, 109);
+    color: rgb(109, 9, 71);
     cursor: pointer;
+}
+img {
+    position:fixed;
+    padding-bottom: 28em;
+    background: rgba(65, 105, 225, 0);
+    border-radius: 11px 11px;
 }
