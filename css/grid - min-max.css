@@ -1,6 +1,9 @@
 h1 {
     text-align: center;
 }
+header{
+    margin-top: 5em;
+}
 .contenedor {
       display: grid;
       grid-template-columns: minmax(150px, 350px) 1fr minmax(150px, 350px);
