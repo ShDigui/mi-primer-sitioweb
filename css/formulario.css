@@ -4,7 +4,8 @@
     padding:0;
 }
 .menu {
-    margin-top: 6em;
+    margin-left: 240px;
+    margin-right: 20px;
 }
 body {
     background-image: linear-gradient(to right ,#000000,#0f9b0f);

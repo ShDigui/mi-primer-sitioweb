@@ -3,11 +3,9 @@
     margin: 0;
     padding:0;
 }
-header .main-content {
-    margin-top: 6em;
-}
+
 .territorium {
-    color: rgb(rgb(97, 12, 17), green, blue);
+    color: rgb(97, 12, 17);
 }
 p {
     font-weight: 900;

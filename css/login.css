@@ -9,7 +9,8 @@ body {
     background-size: cover;
 }
 .menu {
-    margin-top: 15em;
+    margin-left: 240px;
+    margin-right: 20px;
     display: flex;
     align-items: center;
     justify-content: center;

@@ -2,60 +2,136 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Bebas Neue', sans-serif;
+}
+.content {
+    margin-left: 240px;
+    margin-right: 20px;
+}
+h2 {
+    text-align: center;
+}
+h1 {
+    text-align: center;
 }
 .main-content {
-    width: 80%;
+    width: 90%;
+    max-width: 1300px;
     margin: 0 auto;
     display: grid;
     gap: 20px;      
-    grid-template: "header           nav              nav "      100px
+    grid-template: "header          nav             nav"      100px
                    "section         section          section"    350px
                    "article-1       article-2        article-3"   auto
-                   "article-4       article-5        article-6"   auto
-                   1fr              1fr              1fr
-                   ;   
+                   "article-4       article-5        article-6"   auto/
+                   1fr              1fr              1fr;   
 }
 header {
     background: rgb(222, 8, 1);
     grid-area: header;
-    display: flex;
-    justify-items: center;
-    text-align: center;
-}
-header, nav, section, .img-article {
-    display: flex;
-    border-radius: 12px;
-    color:white;
-    font-size: 1.8em;
+    margin-top: 30px;
     
 }
-nav {
-    background: goldenrod;
+header, .nav-class, section, .img-article {
+    border-radius: 12px;
+    color: white;
+    font-size: 1.5em;
+    justify-items: center;
+    text-align: center;
+    display: flex;
+}
+
+.nav-class {
+    position: relative;
+    background:white;
     grid-area: nav;
+    margin-top: 30px;
 }
 section {
     background: darkcyan;
     grid-area: section;
 }
-
-.article-1{
+article {
+    max-width: 400px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+article .article-1{
     grid-area: article-1;
 }
-.article-2{
+article .article-2{
     grid-area: article-2;
 }
-.article-3{
+article .article-3{
     grid-area: article-3;
 }
-.article-4{
+article .article-4{
     grid-area: article-4;
 }
-.article-5{
+article .article-5{
     grid-area: article-5;
 }
-.article-6{
+article .article-6{
     grid-area: article-6;
 }
-.bg-art {
-   background: rgb(64, 64, 64)  ;
+.img-article {
+    width: 100%;
+    height: 300px;
+    margin: 20px 20px 20px 0;
+    background: rgb(64, 64, 64);
+}
+
+.font-article {
+    font-size: 1.2em;
+    line-height: 1.5em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: justify;
+    color: black;
+}
+.titulo-articulo {
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+@media screen and (min-width: 500px) and (max-width: 900px) {
+            
+    .main-content {
+        width: 92%;
+        max-width: 1300px;
+        margin: 0 auto;
+        display: grid;
+        gap: 20px;
+        grid-template: "header      nav"                      100px
+                       "section     section"                  350px
+                       "article_1   article_2"                auto
+                       "article_3   article_4"                auto
+                       "article_5   article_6"                auto  /
+                        1fr          1fr;
+    }
+}
+
+@media screen and (min-width: 350px) and (max-width: 500px) {
+    
+    .main-content {
+        width: 95%;
+        max-width: 1300px;
+        margin: 0 auto;
+        display: grid;
+        gap: 10px;
+        grid-template: "header"                               100px
+                       "nav"                                  100px
+                       "section"                              100px
+                       "article_1"                            auto
+                       "article_2"                            auto
+                       "article_3"                            auto
+                       "article_4"                            auto
+                       "article_5"                            auto
+                       "article_6"                            auto  /
+                        1fr;
+    }
+
+    article {
+        max-width: 600px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
 }
