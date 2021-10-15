@@ -20,7 +20,7 @@ h1 {
     margin: 0 auto;
     display: grid;
     gap: 20px;      
-    grid-template: "header          nav             nav"      100px
+    grid-template: "header          nav-class        nav-class"      100px
                    "section         section          section"    350px
                    "article-1       article-2        article-3"   auto
                    "article-4       article-5        article-6"   auto/
@@ -36,15 +36,16 @@ header, .nav-class, section, .img-article {
     border-radius: 12px;
     color: white;
     font-size: 1.5em;
-    justify-items: center;
-    text-align: center;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 .nav-class {
     position: relative;
-    background:white;
-    grid-area: nav;
+    background:goldenrod;
+    grid-area: nav-class;
     margin-top: 30px;
 }
 section {

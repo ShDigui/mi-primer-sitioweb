@@ -24,8 +24,8 @@ h1 {
                       "dia-29         dia-30      dia-21" 100px/
                       1fr              1fr         1fr             1fr         1fr           1fr         1fr  ;
       grid-template-columns: minmax(100px 100px) 1fr;
-      width: 1200%;
-      max-width: 1200px;
+      width: 1300%;
+      max-width: 1400px;
       margin:0 auto;
       border: 5px solid rgb(12, 4, 85);
       font-size: 1.7em;

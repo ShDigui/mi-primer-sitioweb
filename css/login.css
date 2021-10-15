@@ -9,11 +9,11 @@ body {
     background-size: cover;
 }
 .menu {
-    margin-left: 240px;
-    margin-right: 20px;
+
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    
 }
 h1 {
     text-align: center;
@@ -33,7 +33,8 @@ fieldset {
 }
 .box-formulario{
     display: block;
-    margin:  25px auto ;
+    margin:  50px 50px 50px 50px;
+    
 }
 .controls {
     margin-bottom: 1.3em;
