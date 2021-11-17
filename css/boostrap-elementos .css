@@ -1,0 +1,38 @@
+.box-1 {
+    background: violet;
+    color: black;
+    height: 90px;
+    font-size: 1.7em;
+    margin-bottom: .4em;
+}
+.grillas {
+    margin-bottom: 30px;
+
+}
+.row > [class^="col-"] {
+    border: 1px solid rgb(255, 250, 250);
+}
+.cursor {
+    cursor: pointer;
+}
+.content-6 {
+    margin-bottom: 80px;
+}
+.style-espac {
+    margin: 15px;
+}
+.space-img {
+    margin: 60px;
+}
+.card-title {
+    text-align: center;
+}
+.inicio {
+    text-decoration: none;
+    color: brown;
+    background-color: burlywood;
+}
+.inicio:hover {
+    background: black;
+    color: blanchedalmond;
+}

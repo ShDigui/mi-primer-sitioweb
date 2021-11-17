@@ -9,11 +9,10 @@ body {
     background-size: cover;
 }
 .menu {
-
     display: flex;
-    justify-content: center;
     align-items: center;
-    
+    justify-content: center;
+    margin-top: 10em;
 }
 h1 {
     text-align: center;
@@ -26,14 +25,14 @@ h1 {
 fieldset {
     width: 50%;
     display: block;
-    padding: 15px 15px 15px 15px;
+    padding: 10px 10px 10px 10px;
     margin: 0 auto;
     color: rgb(95, 13, 13);
     border-radius: 20px;
 }
 .box-formulario{
     display: block;
-    margin:  50px 50px 50px 50px;
+    margin:  25px 25px 25px 25px;
     
 }
 .controls {
@@ -71,7 +70,7 @@ p {
 }
 img {
     position:fixed;
-    padding-bottom: 28em;
+    padding-bottom: 30.4em;
     background: rgba(65, 105, 225, 0);
     border-radius: 11px 11px;
 }
