@@ -5,6 +5,10 @@ header{
     margin-left: 240px;
     margin-right: 20px;
 }
+.content {
+    margin-left: 240px;
+    margin-right: 20px;
+}
 .contenedor {
       display: grid;
       grid-template-columns: 400px 1fr 1fr ;
