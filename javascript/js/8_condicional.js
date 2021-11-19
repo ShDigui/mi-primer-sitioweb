@@ -2,16 +2,53 @@
 
 //Variables de login
 
-var user = "Kevin1851"
-var clave = "12345678"
+var user = "diego123"
+var clave = "54321"
 
 //Variables de base de datos
 
-var userBd = "Kevin1851"
-var claveBd = "1234568"
+var userBd = "diego1234"
+var claveBd = "654321"
 
 if(user === userBd && clave === claveBd){
     console.log("Bienvenido a nuestra plataforma")
 } else{
     console.log("Usuario incorrecto, asegurese que los datos introducidos sean correctos")
 }
+
+var edadUsuario = 5;
+var destinoUsuario = "cartagena";
+var aerolineaUsuario ="latam";
+var destinoDescuento = "cartagena"
+var aearolineaDescuento = "latam"
+var costoTiquete = 250000;
+var descuento = .10;
+var costoFinal = 0;
+var descuentoUsuario = "";
+
+if (edadUsuario <10 || edadUsuario >70) {
+    
+    costoTiquete = costoTiquete - (costoTiquete * descuento);
+    descuentoUsuario = "por edad";
+    if (destinoUsuario === destinoDescuento)
+        costoTiquete = costoTiquete - (costoTiquete * descuento)
+        costoTiquete = descuentoUsuario += ",por destino"
+}
+
+    if (aerolineaUsuario === aearolineaDescuento){
+        costoTiquete = costoTiquete - (costoTiquete * descuento)
+        descuentoUsuario += " y por aerolinea"
+}
+if (descuentoUsuario != "") {
+    console.log("usted resivio descuentos por:" + descuentoUsuario);
+    console.log("el valor final del tiquete con descuentos es: $" + costoTiquete)
+}
+else {
+    console.log("el valor final del tiquete es: $" + costoTiquete)
+    console.log("lo sentimos, no aplica para ningun descuento ")
+}
+
+
+
+
+     
