@@ -47,7 +47,7 @@ header, .nav-class, section, .img-article {
     background:goldenrod;
     grid-area: nav-class;
     margin-top: 30px;
-    padding: 6%;
+    padding: 1.4em;
 }
 section {
     background: darkcyan;
@@ -83,11 +83,15 @@ article .article-6{
 }
 .img-article {
     width: 100%;
-    height: 100%;
+    height: 300px;
     margin: 20px 20px 20px 0;
-    
 }
-
+.img_article {
+    width: 100%;
+    height: 300px;
+    margin: 20px 20px 20px 0;
+   
+}
 .font-article {
     font-size: 1.2em;
     line-height: 1.5em;
