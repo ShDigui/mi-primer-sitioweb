@@ -1,6 +1,3 @@
-
-
-
 console.log("===fecha y hora===");
 var currentTime= new Date();
 var HoraActual= currentTime.getHours();
@@ -72,5 +69,5 @@ var milisegundoscumpleDiego=cumpDiego.getTime();
 var diferenciamilis=milisegundoscumpleDiego-milisegundosdiadehoy;
 var diasdiferencia= diferenciamilis/(1000*60*60*24);
 
- alert(Math.floor(diasdiferencia));
+ 
 
