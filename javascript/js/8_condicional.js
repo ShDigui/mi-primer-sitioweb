@@ -16,11 +16,11 @@ if(user === userBd && clave === claveBd){
     console.log("Usuario incorrecto, asegurese que los datos introducidos sean correctos")
 }
 
-var edadUsuario = 5;
-var destinoUsuario = "cartagena";
-var aerolineaUsuario ="latam";
-var destinoDescuento = "cartagena"
-var aearolineaDescuento = "latam"
+var edadUsuario = 39;
+var destinoUsuario = "bogota";
+var aerolineaUsuario ="aviana";
+var destinoDescuento = "bogota"
+var aearolineaDescuento = "avianca"
 var costoTiquete = 250000;
 var descuento = .10;
 var costoFinal = 0;
@@ -41,11 +41,11 @@ if (edadUsuario <10 || edadUsuario >70) {
 }
 if (descuentoUsuario != "") {
     console.log("usted resivio descuentos por:" + descuentoUsuario);
-    console.log("el valor final del tiquete con descuentos es: $" + costoTiquete)
+    console.log("el valor final del tiquete con descuentos es: $" + costoTiquete);
 }
 else {
-    console.log("el valor final del tiquete es: $" + costoTiquete)
-    console.log("lo sentimos, no aplica para ningun descuento ")
+    console.log("el valor final del tiquete es: $" + costoTiquete);
+    console.log("lo sentimos, no aplica para ningun descuento ");
 }
 
 
