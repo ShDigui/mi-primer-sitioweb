@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulando Imagenes</title>
+    <link rel="stylesheet" href="css/manipulando_imagenes.css".css>
+    <script src="js/manipulando_imagenes.js"></script>
+</head>
+<body>
+
+     <h1>MANIPULANDO IMAGENES</h1>
+     
+         <div class="img_principal">
+             <img id="lobito" src="imagenes/bisonte.jpg" onclick="hacer_invisible();">
+        </div>
+    <div class="imagenes">
+         <img id="lobo" src="imagenes/cachorro_lobo.jpg" onmouseover="interConArg('lobito', 'imagenes/lobo.jpg');">
+         <img id="oso" src="imagenes/cachorro_oso.jpg" onmouseover="interConArg('lobito', 'imagenes/oso.jpg')">
+         <img id="leon" src="imagenes/cachorro_leon.jpg" onmouseover="interConArg('lobito', 'imagenes/leon.jpg')">
+         <img id="tigre" src="imagenes/tigre_cachorro.jpg" onmouseover="interConArg('lobito', 'imagenes/tigre.jpg')">
+    </div>
+
+</body>
+</html>
