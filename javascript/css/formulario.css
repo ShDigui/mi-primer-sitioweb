@@ -1,0 +1,21 @@
+table { 
+    text-align: center;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+.content {
+    width: 50%;
+    display: block;
+    margin:  50px auto ;
+}
+.table-style {
+    border: solid 1% ;
+    padding: 10px;
+}
+tr, th {
+    border: solid ;
+    padding: 10px;
+}
+.btn-cargar-producto {
+    cursor: pointer;
+}

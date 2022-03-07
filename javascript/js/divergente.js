@@ -3,13 +3,13 @@
 let cantidadProducto 
 let sumarProducto = 1;
 let restarProductos = "";
-let totalProductos = 226000;
+let totalProductos = 52000;
 let cantidadYaProducto
 
 
 function funSumarProducto (){
     if (sumarProducto < 10){
-       restarProductos = document.getElementById("cantidad_producto").value = ++sumarProducto;
+       restarProductos = document.getElementById("cantidad_producto").value = ++ sumarProducto;
 
        cantidadProducto = document.getElementById("can_Productos");
        cantidadProducto.innerHTML = sumarProducto;
