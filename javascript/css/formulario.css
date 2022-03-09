@@ -9,12 +9,15 @@ table {
     margin:  50px auto ;
 }
 .table-style {
-    border: solid 1% ;
+    border: 1px solid black ;
     padding: 10px;
 }
 tr, th {
-    border: solid ;
+    border: 1px solid black ;
     padding: 10px;
+}
+td {
+    border: 1px solid black;
 }
 .btn-cargar-producto {
     cursor: pointer;

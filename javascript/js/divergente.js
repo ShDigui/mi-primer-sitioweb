@@ -8,7 +8,7 @@ let cantidadYaProducto
 
 
 function funSumarProducto (){
-    if (sumarProducto < 10){
+    if (sumarProducto >=1 & sumarProducto<10){
        restarProductos = document.getElementById("cantidad_producto").value = ++ sumarProducto;
 
        cantidadProducto = document.getElementById("can_Productos");
