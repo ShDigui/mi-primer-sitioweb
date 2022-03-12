@@ -1,7 +1,7 @@
 "use-strict"
  
 let cantidadProducto 
-let sumarProducto = 1;
+let sumarProducto = "";
 let restarProductos = "";
 let totalProductos = 52000;
 let cantidadYaProducto
@@ -22,7 +22,7 @@ function funSumarProducto (){
 }
 function funRestarProducto (){
     if (restarProductos > 1){
-       document.getElementById("cantidad_producto").value = --restarProductos;
+       sumarProducto = document.getElementById("cantidad_producto").value = --restarProductos;
 
        cantidadProducto = document.getElementById("can_Productos");
        cantidadProducto.innerHTML = restarProductos;

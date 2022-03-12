@@ -42,17 +42,17 @@ function validarTabla() {
 function cargarProducto(){
     validarTabla();
 
-    let inputCodigo = document.getElementById("codigo").value;
-    let inputCodigoNodo = document.createTextNode(inputCodigo);
+    let inputCodigoN = document.getElementById("codigo").value;
+    let inputCodigoNodo = document.createTextNode(inputCodigoN);
 
-    let inputDescripcion = document.getElementById("descripcion").value;
-    let inputDescripcionNodo = document.createTextNode(inputDescripcion);
+    let inputDescripcionN = document.getElementById("descripcion").value;
+    let inputDescripcionNodo = document.createTextNode(inputDescripcionN);
 
-    let inputValorUnitario = document.getElementById("valorUnitario").value;
-    let inputValorUnitarioNodo = document.createTextNode(inputValorUnitario);
+    let inputValorUnitarioN = document.getElementById("valorUnitario").value;
+    let inputValorUnitarioNodo = document.createTextNode(inputValorUnitarioN);
 
-    let inputUnidadStock = document.getElementById("unidadStock").value;
-    let inputUnidadStockNodo = document.createTextNode(inputUnidadStock);
+    let inputUnidadStockN = document.getElementById("unidadStock").value;
+    let inputUnidadStockNodo = document.createTextNode(inputUnidadStockN);
 
     cargarInfoTabla(inputCodigoNodo, inputDescripcionNodo, inputValorUnitarioNodo, inputUnidadStockNodo)
 }
@@ -75,4 +75,19 @@ function cargarInfoTabla (codigo, descripcion, valorUnitario, unidadStock) {
     let nodoUnidadStock = document.createElement("td");
     nodoProducto.appendChild(nodoUnidadStock);
     nodoUnidadStock.appendChild(unidadStock);
+}
+function validarFomulario (){
+    let inputCodigo = document.getElementById("codigo").value.trim();
+    if(inputCodigo == "") {
+        alert("Por favor ingrese el còdigo");
+        return false;
+    }
+
+    let inputDescripcion = document.getElementById("descripcion").value.trim();
+    if(inputDescripcion == "") {
+        alert("Por favor ingresar la descripciòn");
+        return false;
+    }
+
+    return true;
 }

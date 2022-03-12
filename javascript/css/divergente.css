@@ -21,11 +21,11 @@ h3 {
 .titulo{
     display: grid;
     margin: auto;
-    grid-area: titulo; 
+    grid-area: titulo, titulo; 
     max-width: max-content ;
     text-align: center;
     background: yellow;
-    padding: 5%;
+    padding: 2px;
     border-radius: 10px;
 }
 .imagen {
