@@ -31,7 +31,7 @@ fieldset {
     background-color: rgba(12, 151, 59, 0.329);
 }
 .table-style {
-    border: solid 1% ;
+    border: 1px solid black ;
     padding: 10px;
 }
 td {
@@ -39,8 +39,15 @@ td {
     padding: 10px;
 }
 tr, th {
+<<<<<<< HEAD
     border: solid 1px ;
+=======
+    border: 1px solid black ;
+>>>>>>> 2c591c2fb93182cc67b9ab52834aad86ae901543
     padding: 10px;
+}
+td {
+    border: 1px solid black;
 }
 .btn-cargar-producto {
     width: 100%;

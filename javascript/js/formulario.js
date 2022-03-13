@@ -40,6 +40,8 @@ function validarTabla() {
     }
 }
 function cargarProducto(){
+    if (validarFormulario()) {
+
     validarTabla();
 
     let inputCodigoN = document.getElementById("codigo").value;
@@ -55,6 +57,7 @@ function cargarProducto(){
     let inputUnidadStockNodo = document.createTextNode(inputUnidadStockN);
 
     cargarInfoTabla(inputCodigoNodo, inputDescripcionNodo, inputValorUnitarioNodo, inputUnidadStockNodo)
+    }
 }
 function cargarInfoTabla (codigo, descripcion, valorUnitario, unidadStock) {
     let nodoProducto = document.createElement("tr");
@@ -76,18 +79,31 @@ function cargarInfoTabla (codigo, descripcion, valorUnitario, unidadStock) {
     nodoProducto.appendChild(nodoUnidadStock);
     nodoUnidadStock.appendChild(unidadStock);
 }
-function validarFomulario (){
-    let inputCodigo = document.getElementById("codigo").value.trim();
-    if(inputCodigo == "") {
-        alert("Por favor ingrese el còdigo");
+function validarFormulario() {
+    let inputCodigoValidar = document.getElementById("codigo").value.trim();
+    if(inputCodigoValidar == "") {
+        alert ("Por favor, imgresar el código");
         return false;
     }
 
-    let inputDescripcion = document.getElementById("descripcion").value.trim();
-    if(inputDescripcion == "") {
-        alert("Por favor ingresar la descripciòn");
+    let inputDescripcionValidar = document.getElementById("descripcion").value.trim();
+    if (inputDescripcionValidar == "") {
+        alert ("Por favor, ingresar la descripción");
+        return false;
+    }
+
+    let inputValorUnitValidar = document.getElementById("valorUnitario").value.trim();
+    if (inputValorUnitValidar == "") {
+        alert ("Por favor; ingresar el valor unitario")
+        return false;
+    }
+
+    let inputStockValidar = document.getElementById("unidadStock").value.trim();
+    if (inputStockValidar == "") {
+        alert ("Por favor; ingresar las unidades en stock")
         return false;
     }
 
     return true;
+
 }
