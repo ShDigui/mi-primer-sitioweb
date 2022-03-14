@@ -79,6 +79,9 @@ function cargarInfoTabla (codigo, descripcion, valorUnitario, unidadStock) {
     nodoProducto.appendChild(nodoUnidadStock);
     nodoUnidadStock.appendChild(unidadStock);
 }
+function limpiarFormulario() {
+    
+}
 function validarFormulario() {
     let inputCodigoValidar = document.getElementById("codigo").value.trim();
     if(inputCodigoValidar == "") {

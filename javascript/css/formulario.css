@@ -5,7 +5,8 @@ table {
     align-items: center;
     margin: 0 auto;
     border-collapse: collapse;
-    background-color: rgba(12, 151, 59, 0.329);
+    /*
+    background-color: rgba(64, 64, 64, 0.329);*/
 }
 label {
     align-items: flex-start;
@@ -27,9 +28,10 @@ input {
     font-family:  'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
      
 }
-fieldset {
-    background-color: rgba(12, 151, 59, 0.329);
-}
+/*fieldset {
+   background-color: rgba(64, 64, 64, 0.329);
+   
+}*/
 .table-style {
     border: 1px solid black ;
     padding: 10px;
@@ -39,11 +41,6 @@ td {
     padding: 10px;
 }
 tr, th {
-<<<<<<< HEAD
-    border: solid 1px ;
-=======
-    border: 1px solid black ;
->>>>>>> 2c591c2fb93182cc67b9ab52834aad86ae901543
     padding: 10px;
 }
 td {
@@ -55,5 +52,6 @@ td {
     padding: 5px;
     font-size: 20px;
     font-weight: 450;
-    background-color: rgba(12, 151, 59, 0.52);
+   /* background-color: rgba(64, 64, 64, 0.52);
+    */
 }
