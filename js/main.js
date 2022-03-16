@@ -1,10 +1,10 @@
 $(document).ready(main);
 
-var contador = 1;
+var contador = 0;
 
 function main () {
 	$('.menu_bar').click(function(){
-		if (contador == 1) {
+		if (contador == 0) {
 			$('nav').animate({
 				left: '0'
 			});
