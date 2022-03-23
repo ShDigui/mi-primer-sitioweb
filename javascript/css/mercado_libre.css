@@ -24,4 +24,6 @@ input {
     font-size: 16px;
     box-sizing: border-box;
 }
-
+.fa-solid {
+    cursor: pointer;
+}
