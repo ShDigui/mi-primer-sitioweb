@@ -125,7 +125,7 @@ window.addEventListener("keydown", function(event) {
         else {
               this.true;
         } 
-        return this. false.alert("no se han encontrado resultados."); 
+       this. false.alert("no se han encontrado resultados."); 
     }
 })
 
