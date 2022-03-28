@@ -41,7 +41,7 @@ function mostrarVehiculo() {
 let toyota = new Automovil ("Toyota", "Prado", "$ 219.800.000", "imagenes/toyota_prado.jpg");
 
 function validarToyota () {
-    alert (toyota.Marca + " " + toyota.Modelo + " " + "El auto perfecto para salir de paseo con tu familia o amigos¡¡")
+    alert (toyota.Marca + "" + toyota.Modelo + "" + "El auto perfecto para salir de paseo con tu familia o amigos¡¡")
 
     mostrarToyota ();
 }
@@ -72,7 +72,7 @@ function mostrarToyota () {
 }
  let chevrolet = new Automovil ("Chevrolet", "Camaro", "$ 274000000", "imagenes/chevrolet_camaro.jpg");
  function validarChevrolet() {
-     alert (chevrolet.Marca + " " + chevrolet.Modelo + " " + "El auto mas eficaz en la carretera¡¡")
+     alert (chevrolet.Marca + "" + chevrolet.Modelo + "" + "El auto mas eficaz en la carretera¡¡")
 
      mostarChevrolet();
  }
@@ -90,7 +90,7 @@ function mostarChevrolet () {
     let modeloChevrolet = document.createElement("label");
     contnedorChevrolet.appendChild(modeloChevrolet);
     let textModeloChevrolet = document.createTextNode(chevrolet.Modelo);
-    marcaChevrolet.appendChild(textModeloChevrolet);
+    modeloChevrolet.appendChild(textModeloChevrolet);
 
     let precioChevrolet = document.createElement("label");
     contnedorChevrolet.appendChild(precioChevrolet);
@@ -123,9 +123,9 @@ window.addEventListener("keydown", function(event) {
         }
             
         else {
-              this.true;
+               this. false.alert("no se han encontrado resultados.");
         } 
-       this. false.alert("no se han encontrado resultados."); 
+      
     }
 })
 

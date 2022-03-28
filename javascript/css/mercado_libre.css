@@ -1,39 +1,73 @@
+* {
+    margin: 0;
+    padding:0;
+}
 .encabezado {
     background: rgb(251, 235, 5);
+    align-content: center;
+    width: 100% ;
     padding: 5px;
-    border-radius: 15px;
-    height: 90px;
+    height: 70px;
     display: grid;
-    grid-template-columns:  1fr 1fr 1fr 1fr 1fr;
-    grid-template: "img      buscar   buscar  buscar    a-solid " /
-                    100px     400px    400px    400px;
+    grid-template-columns:  1fr  1fr  1fr 1fr ;
+    grid-template: "   img-mercado-libre    buscar    buscar       i " /             
+                           100px            auto         auto     auto;
+        
 }
-.img, .buscar {
-    grid-area: img;
+
+.img-mercado-libre {
+    grid-area: img-mercado-libre;
     display: inline-block;
     margin-right: 2.5em;
 }
 input {
     grid-area: buscar;
     outline: none;
-    border: 1px rgb(25, 25, 25);
+    border: 2px rgb(25, 25, 25);
     cursor: pointer;
-    height: 50px;
+    height: 45px;
 }
+::placeholder {
+    text-align: center;
+    font-family: 'Roboto', 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+i {
+    align-content: center;
+    margin-top: .5em;
+} 
 .buscar {
+    grid-area:buscar;
     margin-top: 10px;
-    margin-left: 5px;
+    margin-left: 10px;
     margin-right: 5px;
     align-content: center;
     width: auto;
-    grid-area:buscar;
-    border-radius: 10px;
-    font-family: inherit;
-    font-size: 16px;
+    border-radius: 5px;
+    font-family: 'Roboto', 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.5em ;
 }
 .fa-solid {
-    grid-area: fa-solid;
+    grid-area: i;
     cursor: pointer;
-    margin-right: 20em;
-    margin-bottom: 500em;
+    position:relative;
+    display: inline-block;
+    font-size:  2em ;
+    
+}
+.content-auto{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template: "img     label" /
+                    1fr    400px;
+    display:inline-block;
+}
+img {
+    display: grid;
+    grid-area: img;
+    background-size: cover;
+} 
+label {
+    display: grid;
+    grid-area: label;
+    font-family:'Roboto', 'Open Sans', 'Helvetica Neue', sans-serif; 
 }

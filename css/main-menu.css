@@ -2,6 +2,10 @@
     margin: 0;
     padding:0;
 }
+.menu-bar {
+    display: block;
+    padding: 20px;
+}
 .menu-box {
     position: fixed;
     top:0;
