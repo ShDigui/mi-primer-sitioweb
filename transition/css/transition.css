@@ -1,0 +1,60 @@
+.container-1 {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    transition-property: width;
+    transition-duration: 1500ms;
+    margin-bottom: 30px;
+}
+.container-1:hover {
+    width: 300px;
+}
+.container-2 {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    transition:background-color 2000ms;
+    margin-bottom: 30px;
+}
+.container-2:hover {
+    background-color: aquamarine;
+}
+.container-3 {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    transition: width, background-color, 2000ms;
+    margin-bottom: 30px;
+}
+.container-3:hover {
+    width: 300px;
+    background-color: aquamarine;
+}
+.container-4 {
+    width: 200px;
+    height: 200px;
+    background-color:cadetblue;
+    clip-path: circle(50% at center);
+    margin-bottom: 30px;
+}
+.container-5 {
+    width: 200px;
+    height: 200px;
+    background-color:cadetblue;
+    clip-path: circle(50% at  left);
+    margin-bottom: 30px;
+}
+.container-6 {
+    width: 200px;
+    height: 200px;
+    background-color:cadetblue;
+    clip-path: circle(60% at center);
+    margin-bottom: 30px;
+}
+.container-6 {
+    width: 200px;
+    height: 200px;
+    background-color:cadetblue;
+    clip-path: circle(50% at center);
+    margin-bottom: 30px;
+}

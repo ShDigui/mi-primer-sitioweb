@@ -40,7 +40,7 @@ nav{
     cursor: pointer; 
 }
 ul {
-    height: 100%;
+    height: calc(100% - 60px);
     display: flex;
     flex-direction: column;
     width: 200px;
@@ -65,7 +65,7 @@ li:hover {
     background: rgb(12, 117, 117);
     padding-top: 15px;
 }
-/*
+
 @media only  screen and (max-width: 600px) {
     #side-header {
         width: 120px;
