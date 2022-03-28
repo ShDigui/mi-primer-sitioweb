@@ -57,8 +57,8 @@ i {
 .content-auto{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template: "img     label" /
-                    1fr    400px;
+    grid-template: "img   label label label" /
+                    1fr   1fr    1fr    1fr;
     display:inline-block;
 }
 img {

@@ -6,6 +6,9 @@
     display: block;
     padding: 20px;
 }
+.icon-menu {
+    position: fixed;
+}
 .menu-box {
     position: fixed;
     top:0;
@@ -62,7 +65,7 @@ li:hover {
     background: rgb(12, 117, 117);
     padding-top: 15px;
 }
-
+/*
 @media only  screen and (max-width: 600px) {
     #side-header {
         width: 120px;
