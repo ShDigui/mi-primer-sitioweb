@@ -104,13 +104,20 @@ select {
                         auto
                     "origenOption"/
                         auto
-                    "destinoVuelo"
-                    "destinoOption"
-                    "fecha-salida"
-                    "fecha-regreso"
-                    "adultos"
-                    "ninios"
-                    "infantes";
+                    "destinoVuelo"/
+                        auto
+                    "destinoOption"/
+                        auto
+                    "fecha-salida"/
+                        auto
+                    "fecha-regreso"/
+                        auto
+                    "adultos"/
+                        auto
+                    "ninios"/
+                        auto
+                    "infantes"/
+                        auto;
     justify-content:center;
     gap: 10px;
     }

@@ -13,6 +13,8 @@ label {
     margin-left: 5px;
 }
 input {
+    padding: 5px;
+    border-radius: 5px;
     margin-left: 5px;
 }
 .desc_product {
@@ -28,10 +30,9 @@ input {
     font-family:  'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
      
 }
-/*fieldset {
-   background-color: rgba(64, 64, 64, 0.329);
-   
-}*/
+fieldset {
+   border-radius: 25px;
+}
 .table-style {
     border: 1px solid black ;
     padding: 10px;
@@ -49,9 +50,10 @@ td {
 .btn-cargar-producto {
     width: 100%;
     cursor: pointer;
-    padding: 5px;
+    padding: 10px;
     font-size: 20px;
     font-weight: 450;
+    border-radius: 20px;
    /* background-color: rgba(64, 64, 64, 0.52);
     */
 }
