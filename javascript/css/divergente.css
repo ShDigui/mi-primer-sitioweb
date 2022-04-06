@@ -81,3 +81,9 @@ img {
     cursor: pointer;
     border-radius: 5px;
 }
+@media only screen and (max-width:750px) {
+    .imagen {
+        background-image: url("../imagenes/divergente\ -\ vista.png");
+        background-repeat: no-repeat;
+    }
+}
