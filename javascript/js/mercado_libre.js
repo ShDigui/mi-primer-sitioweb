@@ -18,6 +18,10 @@ function mostrarVehiculo() {
     let contentAuto      = document.createElement("div");
     contentPrincipal.appendChild(contentAuto);
 
+    let imagenAuto  = document.createElement("img");
+    contentAuto.appendChild(imagenAuto);
+    imagenAuto.setAttribute("src", auto.Imagen);
+
     let marcaAuto = document.createElement("label");
     contentAuto.appendChild(marcaAuto);
     let textMarca = document.createTextNode(auto.Marca);
@@ -33,9 +37,7 @@ function mostrarVehiculo() {
     let textAuto = document.createTextNode(auto.Precio);
     precioAuto.appendChild(textAuto);
 
-    let imagenAuto  = document.createElement("img");
-    contentAuto.appendChild(imagenAuto);
-    imagenAuto.setAttribute("src", auto.Imagen);
+    
 }
 
 let toyota = new Automovil ("Toyota", "Prado", "$ 219.800.000", "imagenes/toyota_prado.jpg");
@@ -51,6 +53,10 @@ function mostrarToyota () {
     let contentToyota        = document.createElement("div");
     contenedorPrinToyota.appendChild(contentToyota);
 
+    let imgToyota = document.createElement("img");
+    contentToyota.appendChild(imgToyota);
+    imgToyota.setAttribute("src", toyota.Imagen)
+    
     let marcaToyota = document.createElement("label");
     contentToyota.appendChild(marcaToyota);
     let textToyotaMarca = document.createTextNode(toyota.Marca);
@@ -66,9 +72,7 @@ function mostrarToyota () {
     let textPrecioToyota = document.createTextNode(toyota.Precio);
     precioToyota.appendChild(textPrecioToyota);
 
-    let imgToyota = document.createElement("img");
-    contentToyota.appendChild(imgToyota);
-    imgToyota.setAttribute("src", toyota.Imagen)
+    
 }
  let chevrolet = new Automovil ("Chevrolet", "Camaro", "$ 274000000", "imagenes/chevrolet_camaro.jpg");
  function validarChevrolet() {
@@ -82,6 +86,10 @@ function mostarChevrolet () {
     let contnedorChevrolet = document.createElement("div");
     contenedorPrincChevrolet.appendChild(contnedorChevrolet);
 
+    let imgChevrolet = document.createElement("img");
+    contnedorChevrolet.appendChild(imgChevrolet);
+    imgChevrolet.setAttribute("src", chevrolet.Imagen)
+    
     let marcaChevrolet = document.createElement("label");
     contnedorChevrolet.appendChild(marcaChevrolet);
     let textMarcaChevrolet = document.createTextNode(chevrolet.Marca);
@@ -97,9 +105,7 @@ function mostarChevrolet () {
     let textPrecioChevrolet = document.createTextNode(chevrolet.Precio);
     precioChevrolet.appendChild(textPrecioChevrolet);
 
-    let imgChevrolet = document.createElement("img");
-    contnedorChevrolet.appendChild(imgChevrolet);
-    imgChevrolet.setAttribute("src", chevrolet.Imagen)
+    
 }
 
 window.addEventListener("keydown", function(event) {

@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.content {
+    padding: 15px;
+    width: 100% ;
+    background-color: #af111f;
+}
+.tiquet-linea {
+    display: flex;
+    justify-content: center;
+}
+h2 {
+    text-align: center; 
+    display:flex;
+    justify-content:space-between;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-size: 28px;
+    font-weight: normal;
+    color: #4a4a4a;
+}
+.content-vuelos {
+    margin-top: 50px;
+    display:flex;
+    justify-content: space-between;
+    align-items:flex-end;
+    align-content: flex-end;
+    width: auto;
+    height:auto;
+}
+.origen-destino-vuelos {
+    width: .5em;
+    margin-left: 10em;
+}
+.origenVuelo {
+    width: .5em;
+    margin-left: 3em;
+}
+.destinoVuelo {
+    width: .5em;
+    margin-left: 3em;
+}
+.pasajeros {
+    display: flex;
+    justify-content:space-between;
+    align-items:flex-end;
+    align-content: space-between;
+    position:relative;
+    margin-right: 25em;
+}
+.fechas {
+     margin-left: 10em;
+     margin-right: 1em;
+}
+.buscar {
+    padding:10px 0px;
+    border-radius: 10px;
+    width:50%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin:auto;
+    background-color:  #af111f;
+    cursor: pointer;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 20px;
+    line-height: 20px;
+    color:whitesmoke;
+}
+input {
+    padding: 10px;
+    border-radius: 15px;
+    outline: none;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 15px;
+    line-height: 15px;
+    color:black;
+}
+label {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 20px;
+    line-height: 20px;
+    color:black;
+}
+select {
+    padding: 10px;
+    border-radius: 15px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 15px;
+    line-height: 15px;
+    color:black;
+}
+@media only screen and (max-width:750px) {
+    .content-vuelos{
+        display:grid;
+    grid-template-columns:1fr;
+    grid-template: "origenVuelo"/
+                        auto
+                    "origenOption"/
+                        auto
+                    "destinoVuelo"
+                    "destinoOption"
+                    "fecha-salida"
+                    "fecha-regreso"
+                    "adultos"
+                    "ninios"
+                    "infantes";
+    justify-content:center;
+    gap: 10px;
+    }
+    .destinoVuelo {
+        display: grid;
+        grid-area: destinoVuelo;
+        margin: auto;
+    }
+    .origenVuelo {
+        display: grid;
+        grid-area: origenVuelo;
+        margin: auto;
+    }
+    .fechas {
+        display: grid;
+        margin:auto;
+    }
+    .pasajeros {
+        display: grid;
+        margin: auto;
+    }   
+    .buscar {
+        margin:auto;
+    }
+}
