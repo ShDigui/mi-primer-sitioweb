@@ -1,96 +1,125 @@
-* {
-    margin: 0;
+*{
+    margin:0;
     padding:0;
 }
+h1 {
+    text-align:center;
+    font-family:cursive;
+    font-size: 25px;
+}
+body {
+    background: #FEFEFE;
+}
 .menu-bar {
-    display: block;
-    padding: 20px;
+    display: none;
 }
-.icon-menu {
-    position: fixed;
+header {
+    width: 100%;
 }
-.menu-box {
-    position: fixed;
-    top:0;
-    width: 160px;
-    padding-left: 20px;
-    height: 60px;
-    border-bottom: 1px solid  rgb(96, 96, 96 .8);
+header nav {
+    background: rgb(5, 70, 64);
+    width: 100%;
+    top: 11.5%;
 }
-.menu-box-invisible {
-    width: 160px;
-    margin-left: 20px;
-    visibility:hidden;
-    height: 60px;
-}
-#side-header {
-    position: fixed;
-    top: 0;
-    width: 220px;
-    height: 100%;
-}
-.main-content {
-    margin-left: 240px;
-    margin-right: 20px;
-}
-nav{
-    height: calc(100% - 60px);
-    position: fixed;
-    background-color: rgb(5, 70, 64) ;
-    cursor: pointer; 
-}
-ul {
-    height: calc(100% - 60px);
-    display: flex;
-    flex-direction: column;
-    width: 200px;
-    text-align: left;
+header nav ul {
     list-style: none;
-    font-size: 0.80em;
-    font-family: 'roboto',sans-serif;
-    margin-left: 10px;
-    overflow-y: scroll;
+    text-align: center;
 }
-li {
+header nav ul li {
     display: inline-block;
-    padding: 10px;
+    position: relative;
+}
+header nav ul li:hover {
+    background: rgb(12, 117, 117);
+}
+header nav ul li a {
+    display: block;
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+    text-align: center;
+}
+header nav ul li .children {
+    display: none;
+    position: absolute;
+    background: rgb(5,70,64);
+    text-align: center;
+}
+header nav ul li:hover .children {
+    display: block;
+    text-align: center;
+}
+header nav ul li.children li {
+    overflow: hidden;
+    display: block;
+    border-bottom: 1px solid rgba(255, 255, 255, .5);
+}
+header nav ul li .children li a {
+    display: block;
+}
+header nav ul span {
+    margin-right: 10px;
+}
+header nav ul li .icon-chevron-small-down{
+    position:relative;
+    top:3px;
     margin-left: 10px;
 }
-a {
-    font-size: 1.1em;
-    text-decoration: none;
-    color: white;
-}
-li:hover {
-    background: rgb(12, 117, 117);
-    padding-top: 15px;
-}
-
-@media only  screen and (min-width:350px,  max-width=600px ) {
-    #side-header {
-        width: 120px;
-        overflow-x: hidden;
+@media only screen and (max-width:750px),(min-width:450px) {
+    body{
+        padding-top: 68px;
     }
-    h1 {
-        margin-top: 60px;
-    }
-    .main-content{
-        margin-left: 30px;
-    }
-    nav {
-        background: rgb(5, 70, 64) ;
-        width: 100% ;
+    .menu-bar{
+        display: block;
         position: fixed;
-        right: 100%;
-        font-size: 1.4em;
-        overflow-x: hidden;
+        width: 100%;
+        background: #06344a;
+        top:0;
     }
-    ul {
-        width: 98%;
-        overflow-x: hidden;
+    .bt-menu {
+        display: block;
+        padding: 20px;
+        color:white;
+        font-size: 25px;
+        font-weight: bold;
+        text-decoration: none;
+        overflow: hidden;
+    }
+    .menu-bar span {
+        float: right;
+        font-size: 40px;
+    }
+    header nav {
+        width: 30%;
+        position:fixed;
+        height: calc(100% - 80px);
+        background: #023859fa;
+        left: -100%;
+        overflow: scroll;
+    }
+    header nav ul {
+        text-align: center;
+    }
+    header nav ul li {
+        display: block;
+        border-bottom: 1px solid rgba(255, 255, 255, .5);
+    }
+    header nav ul li a {
+        display: block;
+    }
+    header nav ul li .children {
+        position: relative;
+        width: 100%;
+    }
+    header nav ul li .children li a {
+        text-align: center;
+        padding-left: center;
+        background-color: #011c2cfa;
+    }
+    header nav ul li .icon-chevron-small-down {
+        float: right;
+    }
+    header nav ul li:hover .children {
+        display: none;
     }
 }
-nav.mostrarNav {
-    left: 0;
-}
-    

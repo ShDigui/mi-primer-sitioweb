@@ -11,8 +11,9 @@ p {
     font-weight: 900;
     font-family: 'Amatic SC',cursive, sans-serif;
 }
-h1 {
+.title {
     font-style:italic;
+    font-size: 50px;
 }
 .nombre {
     font-style: italic;

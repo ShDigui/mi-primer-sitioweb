@@ -5,8 +5,7 @@
     font-family: 'Bebas Neue', sans-serif;
 }
 .content {
-    margin-left: 240px;
-    margin-right: 20px;
+    justify-content: center;
 }
 h2 {
     text-align: center;
