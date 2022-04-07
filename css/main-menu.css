@@ -50,7 +50,7 @@ header nav ul li:hover .children {
     text-align: center;
 }
 header nav ul li.children li {
-    overflow: hidden;
+    overflow:hidden;
     display: block;
     border-bottom: 1px solid rgba(255, 255, 255, .5);
 }
