@@ -14,6 +14,7 @@ p {
 .title {
     font-style:italic;
     font-size: 50px;
+    color: black;
 }
 .nombre {
     font-style: italic;

@@ -6,6 +6,7 @@ h1 {
     text-align:center;
     font-family:cursive;
     font-size: 25px;
+    font-weight: 900;
 }
 body {
     background: #FEFEFE;
@@ -30,11 +31,13 @@ header nav ul li {
     position: relative;
 }
 header nav ul li:hover {
-    background: rgb(12, 117, 117);
+    background: rgb(17, 102, 95);
 }
 header nav ul li a {
     display: block;
     color: white;
+    font-family: cursive;
+    font-size: 20px;
     padding: 15px;
     text-decoration: none;
     text-align: center;
@@ -52,7 +55,7 @@ header nav ul li:hover .children {
 header nav ul li.children li {
     overflow:hidden;
     display: block;
-    border-bottom: 1px solid rgba(255, 255, 255, .5);
+    border-bottom: 1em solid rgba(255, 255, 255, 0.534);
 }
 header nav ul li .children li a {
     display: block;
@@ -73,7 +76,7 @@ header nav ul li .icon-chevron-small-down{
         display: block;
         position: fixed;
         width: 100%;
-        background: #06344a;
+        background: rgb(5, 70, 64);
         top:0;
     }
     .bt-menu {
@@ -93,7 +96,7 @@ header nav ul li .icon-chevron-small-down{
         width: 30%;
         position:fixed;
         height: calc(100% - 80px);
-        background: #023859fa;
+        background: rgb(5, 70, 64);
         left: -100%;
         overflow: scroll;
     }
@@ -102,7 +105,7 @@ header nav ul li .icon-chevron-small-down{
     }
     header nav ul li {
         display: block;
-        border-bottom: 1px solid rgba(255, 255, 255, .5);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.534);
     }
     header nav ul li a {
         display: block;
@@ -114,7 +117,7 @@ header nav ul li .icon-chevron-small-down{
     header nav ul li .children li a {
         text-align: center;
         padding-left: center;
-        background-color: #011c2cfa;
+        background-color: rgb(5, 70, 64);
     }
     header nav ul li .icon-chevron-small-down {
         float: right;

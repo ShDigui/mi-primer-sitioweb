@@ -1,10 +1,12 @@
+
+* {
+    margin: 0;
+    padding:0;
+}
 h1 {
     text-align: center;
 }
-.content{
-    margin-left: 240px;
-    margin-right: 20px;
-}
+
 .contenedor {
       display: grid;
       grid-template-columns: repeat(5, 1fr) ;

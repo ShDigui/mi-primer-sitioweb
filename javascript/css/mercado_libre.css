@@ -11,7 +11,7 @@
     display: grid;
     grid-template-columns:  1fr  1fr  1fr 1fr 1fr ;
     grid-template: "   img-mercado-libre    buscar    buscar   buscar      i " /             
-                           100px            auto      auto     auto    auto;
+                           100px            auto      auto     auto       auto;
         
 }
 
