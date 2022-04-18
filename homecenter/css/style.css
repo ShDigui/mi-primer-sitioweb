@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding:0;
+}
+.menu {
+    padding: 15px;
+    background: #ffff; 
+    display: inline-block;
+    width: 100% ;
+    border-bottom: 0.0625rem solid #f0f0f0;
+    display: grid;
+    grid-template-columns: 1fr 1fr  1fr;
+    grid-template: " imagen  buscar   iconos"/
+                     250px     auto    auto;
+}
+.imagen {
+    display: grid;
+    grid-area: imagen;
+}
+.iconos {
+    display: inline;
+    grid-area: iconos;
+    margin-left: 25px;
+}
+.buscar{
+    display: grid;
+    grid-area: buscar;
+    border: 0.0625rem solid #f0f0f0;
+}
+input {
+    border: none;
+    outline: none;
+    width: auto;
+    margin-top: 5px;
+}
+.fa-magnifying-glass {
+    margin-left: 95%;
+}
+.transform-hide {
+    position: absolute;
+    bottom: 40px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    background-color: slateblue;
+    transition: width 600ms,  height 600ms;
+}
+.transform-visible {
+    position: absolute;
+    bottom: 40px;
+    right: 10px;  
+    background-color: slateblue;
+    transition: width 600ms,  height 600ms;
+    width: 300px;
+    height: 300;
+}
+.ana-asistente {
+    cursor: pointer;
+}
+    
