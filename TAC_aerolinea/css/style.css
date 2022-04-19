@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
 }
+
 .content {
     padding: 15px;
     width: 100% ;
@@ -143,3 +144,122 @@ select {
         margin:auto;
     }
 }
+
+/* tiquetes*/
+
+
+.mainContent{
+    display:flex;
+    justify-content: space-between;
+    border: ridge;
+}
+.mainContent{
+    display: flex;
+    flex-direction: column-reverse;
+}
+.codigoContent{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    margin: 20px 20px 10px 20px ;
+    border-style: ridge;
+}
+
+ .mainContent2{
+    display: flex;
+    flex-wrap: wrap;
+    border-style: ridge;
+    justify-content: center;
+    margin: auto 17px 17px 17px ;
+}
+
+.inicioContent{
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    border-right-style: ridge;
+}
+.descripcionContent{
+    flex-grow: 5;
+    display: flex;
+    flex-direction: row;
+
+}
+.fechaHoraInicio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    order: 1;
+    flex-grow: 2.5;
+}
+.fechaHorafinal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    order: 3;
+    flex-grow: 2.5;
+
+}
+.duracionVuelo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    order: 2;
+    flex-grow: 1;
+
+}
+.imagenVuelos{
+    padding-bottom: 0;
+    margin-bottom: 0;
+    margin-top: 15px;
+    font-size: 3px;
+    background: cover;
+}
+.destinoContent{
+    display: flex;
+    flex-grow: 1;
+    border-left-style: ridge;
+    justify-content: center;
+    align-items: center;
+}
+
+.horaSalidadLlegada{
+    color: #af111f;
+    font-size: 27px;
+    margin-top: 0;
+    padding-top: 0;
+}
+.salidadLegadaFecha{
+    color:#4a4a4a;
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+}
+.precioVuelo{
+    color: #af111f;
+    margin-left: 10px;
+    font-size: 20px;
+}
+.codigoVuelo{
+    color: #4a4a4a;
+    margin-right: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    
+}
+.duracionVuelo{
+    color: #4a4a4a;
+    font-weight: 500;
+    margin-top: 0;
+    padding-top: 0;
+    font-size: 15px;
+}
+

@@ -5,6 +5,7 @@
 
 h1 {
     text-align: center;
+    margin:auto;
 }
 table {
     text-align: center;
@@ -27,9 +28,6 @@ td {
 }
 .celda1-1 {
     border: none;
-}
-th{
-    width: 200px;
 }
 .sin-fondon {
     background-color: white;

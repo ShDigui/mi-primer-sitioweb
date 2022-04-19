@@ -1,20 +1,30 @@
-let botonForm = document.getElementById("botonForm");
-let botonCerrar = document.getElementById("botonCerrar");
-let popUp = document.getElementById("pop-up");
 
-botonForm.addEventListener("click", mostrarForm);
-botonCerrar.addEventListener("click", ocultarForm);
+const contenido = document.querySelector('.contenido')
+let mostrarBot = document.getElementById('bot');
+const ocultarButton = document.getElementById('buttom');
+let salirBot = document.getElementById('salir');
+let sendButtom = document.getElementById('enviar');
 
-function mostrarForm () {
-    popUp.classList.add("transform-visible");
-    popUp.classList.remove("transform-hide");
-    botonCerrar.classList.add("botonCerrarVisible");
-    botonCerrar.classList.remove("botonCerrar");
+
+
+ocultarButton.addEventListener('click', buscar );
+
+function buscar(){
+    mostrarBot.classList.add("bot-visibleBot")
+    mostrarBot.classList.remove("bot")
+    ocultarButton.classList.add("buttom-verButtom")
+    ocultarButton.classList.remove("buttom")
+    contenido.classList.add('contenido-mostrar')
+    contenido.classList.remove('contenido')
 }
 
-function ocultarForm () {
-    popUp.classList.add("transform-visible");
-    popUp.classList.remove("transform-hide");
-    botonCerrar.classList.add("botonCerrarVisible");
-    botonCerrar.classList.remove("botonCerrar");
+salirBot.addEventListener('click', );
+
+function salir(){
+    mostrarBot.classList.add("bot")
+    mostrarBot.classList.remove("bot-visibleBot")
+    ocultarButton.classList.add("buttom")
+    ocultarButton.classList.remove("buttom-verButtom")
+    contenido.classList.add('contenido')
+    contenido.classList.remove('contenido-mostrar')
 }
