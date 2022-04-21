@@ -1,11 +1,14 @@
-
+const buttomBusqueda = document.querySelector('.fa-magnifying-glass');
+const busqueda = document.querySelector('.buscar')
 const contenido = document.querySelector('.contenido')
 let mostrarBot = document.getElementById('bot');
 const ocultarButton = document.getElementById('buttom');
 let salirBot = document.getElementById('salir');
 let sendButtom = document.getElementById('enviar');
 
-
+buttomBusqueda.addEventListener('click', () => {
+    busqueda.classList.toggle('buscar');
+});
 
 ocultarButton.addEventListener('click', buscar );
 

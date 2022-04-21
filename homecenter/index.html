@@ -13,9 +13,9 @@
             <img src="imagenes/logo.jpg" alt="">
         </div>  
         <div class="buscar">            
-            <input  type="text" placeholder="¿qué estas buscando?"  >
-            <i class="fa-solid fa-magnifying-glass"></i>
+            <input  type="text" placeholder="¿qué estas buscando?"> 
         </div>  
+        <div class="busqueda" id="busqueda"><i class="fa-solid fa-magnifying-glass"></i></div>
         <div class="iconos">   
             <i class="fa-solid fa-location-dot"></i>
             <i class="fa-solid fa-cart-shopping"></i>
@@ -27,18 +27,21 @@
 
     <div  id="bot" class="bot">
       <div class="contenido">
-            <div class="salir" id="salir" onclick="salir();">
-                </i> <div class="asist-ana"></div> <i class="fa-solid fa-xmark"></i>
+            <div  class="content-ana">
+                <div class="asist-ana"></div>
+                <label class="salir" id="salir" onclick="salir();"><i class="fa-solid fa-xmark"></i></label>
             </div>
+
                 <div class="piePagina">
-                    <input class="inputEnviar" type="text" placeholder="Escribe tu mensaje...">
-                    <div class="enviar" id="enviar" ><i class="fa-solid fa-paper-plane"></i></div>
+                    <div class="enviar" id="enviar" >
+                        <input class="inputEnviar" type="text" placeholder="Escribe tu mensaje...">
+                                       </div>
                 </div>
         </div>
       </div>
 
 
-    <div onclick="buscar();" id="buttom" class="buttom"><div class="ana-imagen"></div></div>
+    <div id="buttom" class="buttom"><div class="ana-imagen"></div></div>
 
 
 
