@@ -21,11 +21,11 @@ h3 {
 .titulo{
     display: grid;
     margin: auto;
-    grid-area: titulo; 
+    grid-area: titulo, titulo; 
     max-width: max-content ;
     text-align: center;
     background: yellow;
-    padding: 5%;
+    padding: 2px;
     border-radius: 10px;
 }
 .imagen {
@@ -80,4 +80,27 @@ img {
     text-align: center;
     cursor: pointer;
     border-radius: 5px;
+}
+@media only screen and (max-width:750px), (min-width:400px) {
+    .contenedor {
+        display: grid;
+        grid-template-columns: 1fr 1fr  ;
+        grid-template: "titulo  titulo" /
+                        auto    auto
+                        "imagen  texto "/
+                          50px     auto;
+        gap: 10px;
+    }
+    .imagen {
+        background-image: url("../imagenes/divergenteVista.png");
+        background-repeat: no-repeat;
+        display: grid;
+        grid-area: imagen;
+        margin: auto;
+    }
+    .titulo {
+        display: grid;
+        grid-area: titulo;
+        margin: auto;
+    }
 }

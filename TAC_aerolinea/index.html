@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aerolinea</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/47910d8a72.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="content">
+         <img class="log-aerolinea" src="img/TAC_aerolinea.jpg" alt="">      
+    </div>
+ 
+    <div class="tiquet-linea">
+    <h2>Compre Sus tiquetes en Linea</h2>
+    </div>
+
+    <div class="content-vuelos">
+        <div class="origen-destino-vuelos"> 
+                 <div class="origenVuelo"> 
+                     <label class="origen-lab">Origen</label>
+                         <br>
+                         <div class="origenOption">
+                             <select class="origen" name="origenVuelo">
+                             <option value="Popayan">Popayan</option>
+                             <option value="Ipiales">Ipiales</option>
+                             </select>
+                         </div>
+                 </div>
+             <br>
+                 <div class="destinoVuelo">
+                      <label>Destino</label>
+                          <br>
+                         <div class="destinoOption">
+                                  <select name="DestinoVuelo" class="Desctino">   
+                                     <option value="Timbiqui">Timbiqui</option>
+                                     <option valu e="Guapi">Guapi</option>
+                                     <option value="cali">Cali</option>
+                                 </select>
+                         </div>
+                  </div>
+             </div>
+         <div class="fechas">
+             <div class="fecha-salida">
+                 <label >Fecha de Salida</label>
+                 <br>
+                 <input type="text">
+             </div>
+             <br>
+             <div class="fecha-regreso">
+                 <label >Fecha de Regreso</label>
+                 <br>
+                 <input  type="text">
+             </div>
+         </div>
+         <div class="pasajeros">
+             <div class="adultos">
+                 <label >Adultos <br><span>>=12años</span></label>
+                 <br>
+                 <input type="text">
+             </div>
+             <div class="ninios">
+                 <label >Niños <br> <span>2-11 años</span></label>
+                 <br>
+                 <input type="text">
+             </div>
+             <div class="infantes">
+                 <label >Infantes <br> <span> < 2 años </span>   </label>
+                     <br>
+                 <input type="text">
+             </div>
+             </div>
+         </div>
+         <br>
+             <input type="button" class="buscar" value="Buscar Vuelos">
+
+        <div id="vuelos" class="content-vuelos">
+
+        </div>
+
+        <script src="js/aerolinea_TAC.js"></script>
+</body>
+</html>

@@ -1,6 +1,7 @@
-.content-elm {
-    margin-left: 240px;
-    margin-right: 20px;
+
+* {
+    margin: 0;
+    padding:0;
 }
 .box-1 {
     background: violet;

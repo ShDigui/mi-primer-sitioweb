@@ -1,0 +1,265 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    padding: 15px;
+    width: 100% ;
+    background-color: #af111f;
+}
+.tiquet-linea {
+    display: flex;
+    justify-content: center;
+}
+h2 {
+    text-align: center; 
+    display:flex;
+    justify-content:space-between;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-size: 28px;
+    font-weight: normal;
+    color: #4a4a4a;
+}
+.content-vuelos {
+    margin-top: 50px;
+    display:flex;
+    justify-content: space-between;
+    align-items:flex-end;
+    align-content: flex-end;
+    width: auto;
+    height:auto;
+}
+.origen-destino-vuelos {
+    width: .5em;
+    margin-left: 10em;
+}
+.origenVuelo {
+    width: .5em;
+    margin-left: 3em;
+}
+.destinoVuelo {
+    width: .5em;
+    margin-left: 3em;
+}
+.pasajeros {
+    display: flex;
+    justify-content:space-between;
+    align-items:flex-end;
+    align-content: space-between;
+    position:relative;
+    margin-right: 25em;
+}
+.fechas {
+     margin-left: 10em;
+     margin-right: 1em;
+}
+.buscar {
+    padding:10px 0px;
+    border-radius: 10px;
+    width:50%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin:auto;
+    background-color:  #af111f;
+    cursor: pointer;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 20px;
+    line-height: 20px;
+    color:whitesmoke;
+}
+input {
+    padding: 10px;
+    border-radius: 15px;
+    outline: none;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 15px;
+    line-height: 15px;
+    color:black;
+}
+label {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 20px;
+    line-height: 20px;
+    color:black;
+}
+select {
+    padding: 10px;
+    border-radius: 15px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 15px;
+    line-height: 15px;
+    color:black;
+}
+@media only screen and (max-width:750px) {
+    .content-vuelos{
+        display:grid;
+    grid-template-columns:1fr;
+    grid-template: "origenVuelo"/
+                        auto
+                    "origenOption"/
+                        auto
+                    "destinoVuelo"/
+                        auto
+                    "destinoOption"/
+                        auto
+                    "fecha-salida"/
+                        auto
+                    "fecha-regreso"/
+                        auto
+                    "adultos"/
+                        auto
+                    "ninios"/
+                        auto
+                    "infantes"/
+                        auto;
+    justify-content:center;
+    gap: 10px;
+    }
+    .destinoVuelo {
+        display: grid;
+        grid-area: destinoVuelo;
+        margin: auto;
+    }
+    .origenVuelo {
+        display: grid;
+        grid-area: origenVuelo;
+        margin: auto;
+    }
+    .fechas {
+        display: grid;
+        margin:auto;
+    }
+    .pasajeros {
+        display: grid;
+        margin: auto;
+    }   
+    .buscar {
+        margin:auto;
+    }
+}
+
+/* tiquetes*/
+
+
+.mainContent{
+    display:flex;
+    justify-content: space-between;
+    border: ridge;
+}
+.mainContent{
+    display: flex;
+    flex-direction: column-reverse;
+}
+.codigoContent{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    margin: 20px 20px 10px 20px ;
+    border-style: ridge;
+}
+
+ .mainContent2{
+    display: flex;
+    flex-wrap: wrap;
+    border-style: ridge;
+    justify-content: center;
+    margin: auto 17px 17px 17px ;
+}
+
+.inicioContent{
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    border-right-style: ridge;
+}
+.descripcionContent{
+    flex-grow: 5;
+    display: flex;
+    flex-direction: row;
+
+}
+.fechaHoraInicio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    order: 1;
+    flex-grow: 2.5;
+}
+.fechaHorafinal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    order: 3;
+    flex-grow: 2.5;
+
+}
+.duracionVuelo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    order: 2;
+    flex-grow: 1;
+
+}
+.imagenVuelos{
+    padding-bottom: 0;
+    margin-bottom: 0;
+    margin-top: 15px;
+    font-size: 3px;
+    background: cover;
+}
+.destinoContent{
+    display: flex;
+    flex-grow: 1;
+    border-left-style: ridge;
+    justify-content: center;
+    align-items: center;
+}
+
+.horaSalidadLlegada{
+    color: #af111f;
+    font-size: 27px;
+    margin-top: 0;
+    padding-top: 0;
+}
+.salidadLegadaFecha{
+    color:#4a4a4a;
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+}
+.precioVuelo{
+    color: #af111f;
+    margin-left: 10px;
+    font-size: 20px;
+}
+.codigoVuelo{
+    color: #4a4a4a;
+    margin-right: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    
+}
+.duracionVuelo{
+    color: #4a4a4a;
+    font-weight: 500;
+    margin-top: 0;
+    padding-top: 0;
+    font-size: 15px;
+}
+

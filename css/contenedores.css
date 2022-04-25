@@ -3,10 +3,7 @@
     margin: 0;
     padding:0;
 }
-.menu {
-    margin-left: 240px;
-    margin-right: 20px;
-}
+
 h1 {
     text-align:center;
 }
@@ -22,6 +19,7 @@ h1 {
     display: inline-block;
     margin: 15px;
     border-radius: 1em;
+
 }
 .box-1 {
     background: darkcyan;

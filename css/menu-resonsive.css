@@ -21,7 +21,7 @@ header nav {
 }
 header nav ul {
     list-style: none;
-    text-align: right;
+    text-align: center;
 }
 header nav ul li {
     display: inline-block;
@@ -35,16 +35,17 @@ header nav ul li a {
     color: white;
     padding: 8px;
     text-decoration: none;
+    text-align: center;
 }
 header nav ul li .children {
     display: none;
     position: absolute;
     background: rgb(5,70,64);
-    text-align: left;
+    text-align: center;
 }
 header nav ul li:hover .children {
     display: block;
-    text-align: left;
+    text-align: center;
 }
 header nav ul li.children li {
     overflow: hidden;
@@ -62,7 +63,7 @@ header nav ul li .icon-chevron-small-down{
     top:3px;
     margin-left: 10px;
 }
-@media only screen and (max-width:750px) {
+@media only screen and (max-width:750px),(min-width:450px) {
     body{
         padding-top: 68px;
     }
@@ -87,7 +88,7 @@ header nav ul li .icon-chevron-small-down{
         font-size: 40px;
     }
     header nav {
-        width: 88%;
+        width: 30%;
         position:fixed;
         height: calc(100% - 80px);
         background: #023859fa;

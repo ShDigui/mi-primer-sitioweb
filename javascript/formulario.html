@@ -13,20 +13,21 @@
             <fieldset>
                 <h1>Registro de Productos</h1>
                 <div class="formulario">
-                    <label >Codigo del producto </label>
+                    <label class="cod_procut" >Codigo del producto </label>
                     <input id="codigo"> <br><br>
-                    <label >Descripcion</label>
+                    <label class="desc_product">Descripcion</label>
                     <input id="descripcion"><br><br>
-                    <label >Valor Unitario</label>
+                    <label class="valor_product">Valor Unitario</label>
                     <input id="valorUnitario">
-                    <label >Unidades en Stock</label>
+                    <label class="unid_poroduct">Unidades en Stock</label>
                     <input id="unidadStock"><br><br>
-                     <input class="btn-cargar-producto" type="button" value="Cargar Producto" onclick="validarTabla()">          
+                     <input class="btn-cargar-producto" type="button" value="Cargar Producto" onclick="cargarProducto();">          
                 </div>                      
             </fieldset>
         </form>     
         <div id="table-js"> </div> 
     </div>
+
 
      <script src="js/formulario.js"></script>
 </body>

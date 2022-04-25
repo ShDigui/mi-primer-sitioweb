@@ -1,6 +1,6 @@
-.menu {
-    margin-left: 240px;
-    margin-right: 20px;
+* {
+    margin: 0;
+    padding:0;
 }
 h1 {
     text-align: center;

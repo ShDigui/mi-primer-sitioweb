@@ -1,6 +1,8 @@
 "use strit"
 //variables globales
 let nodoTabla = undefined;
+let limpiarForm = document.getElementById("content")
+
 function crearEncabezado() {
     nodoTabla = document.createElement("table");
     let contenedor = document.getElementById("table-js");
@@ -40,21 +42,24 @@ function validarTabla() {
     }
 }
 function cargarProducto(){
+    if (validarFormulario()) {
+
     validarTabla();
 
-    let inputCodigo = document.getElementById("codigo").value;
-    let inputCodigoNodo = document.createTextNode(inputCodigo);
+    let inputCodigoN = document.getElementById("codigo").value;
+    let inputCodigoNodo = document.createTextNode(inputCodigoN);
 
-    let inputDescripcion = document.getElementById("descripcion").value;
-    let inputDescripcionNodo = document.createTextNode(inputDescripcion);
+    let inputDescripcionN = document.getElementById("descripcion").value;
+    let inputDescripcionNodo = document.createTextNode(inputDescripcionN);
 
-    let inputValorUnitario = document.getElementById("valorUnitario").value;
-    let inputValorUnitarioNodo = document.createTextNode(inputValorUnitario);
+    let inputValorUnitarioN = document.getElementById("valorUnitario").value;
+    let inputValorUnitarioNodo = document.createTextNode(inputValorUnitarioN);
 
-    let inputUnidadStock = document.getElementById("unidadStock").value;
-    let inputUnidadStockNodo = document.createTextNode(inputUnidadStock);
+    let inputUnidadStockN = document.getElementById("unidadStock").value;
+    let inputUnidadStockNodo = document.createTextNode(inputUnidadStockN);
 
     cargarInfoTabla(inputCodigoNodo, inputDescripcionNodo, inputValorUnitarioNodo, inputUnidadStockNodo)
+    }
 }
 function cargarInfoTabla (codigo, descripcion, valorUnitario, unidadStock) {
     let nodoProducto = document.createElement("tr");
@@ -75,4 +80,43 @@ function cargarInfoTabla (codigo, descripcion, valorUnitario, unidadStock) {
     let nodoUnidadStock = document.createElement("td");
     nodoProducto.appendChild(nodoUnidadStock);
     nodoUnidadStock.appendChild(unidadStock);
+
+    limpiarFormulario();
 }
+
+function limpiarFormulario() {
+    document.getElementById("codigo").value = "";
+    document.getElementById("descripcion").value = "";
+    document.getElementById("valorUnitario").value = "";
+    document.getElementById("unidadStock").value = "";
+}
+
+function validarFormulario() {
+    let inputCodigoValidar = document.getElementById("codigo").value.trim();
+    if(inputCodigoValidar == "") {
+        alert ("Por favor, imgresar el código");
+        return false;
+    }
+
+    let inputDescripcionValidar = document.getElementById("descripcion").value.trim();
+    if (inputDescripcionValidar == "") {
+        alert ("Por favor, ingresar la descripción");
+        return false;
+    }
+
+    let inputValorUnitValidar = document.getElementById("valorUnitario").value.trim();
+    if (inputValorUnitValidar == "") {
+        alert ("Por favor; ingresar el valor unitario")
+        return false;
+    }
+
+    let inputStockValidar = document.getElementById("unidadStock").value.trim();
+    if (inputStockValidar == "") {
+        alert ("Por favor; ingresar las unidades en stock")
+        return false;
+    }
+
+    return true;
+
+}
+

@@ -5,8 +5,7 @@
     font-family: 'Bebas Neue', sans-serif;
 }
 .content {
-    margin-left: 240px;
-    margin-right: 20px;
+    justify-content: center;
 }
 h2 {
     text-align: center;
@@ -20,11 +19,11 @@ h1 {
     margin: 0 auto;
     display: grid;
     gap: 20px;      
-    grid-template: "header          nav-class        nav-class"      100px
-                   "section         section          section"    350px
+    grid-template: "header          nav-class        nav-class"   auto
+                   "section         section          section"     auto
                    "article-1       article-2        article-3"   auto
                    "article-4       article-5        article-6"   auto/
-                   1fr              1fr              1fr;   
+                   auto              auto             auto   
 }
 header {
     background: rgb(222, 8, 1);

@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding:0;
+}
+.encabezado {
+    background: rgb(251, 235, 5);
+    align-content: center;
+    width: 100% ;
+    padding: 5px;
+    height: 70px;
+    display: grid;
+    grid-template-columns:  1fr  1fr  1fr 1fr 1fr 1fr ;
+    grid-template: "   img-mercado-libre    buscar    buscar   buscar  buscar  buscar      i " /             
+                           90px            auto       auto     auto     auto   auto       auto;
+        
+}
+
+.img-mercado-libre {
+    grid-area: img-mercado-libre;
+    display: inline-block;
+    margin-right: 2.5em;
+}
+input {
+    grid-area: buscar;
+    outline: none;
+    border: 2px rgb(25, 25, 25);
+    cursor: pointer;
+    height: 45px;
+}
+::placeholder {
+    text-align: center;
+    font-family: 'Roboto', 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+i {
+    align-content: center;
+    margin-top: .5em;
+} 
+.buscar {
+    grid-area:buscar;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 5px;
+    align-content: center;
+    width: auto;
+    border-radius: 5px;
+    font-family: 'Roboto', 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.5em ;
+}
+.fa-solid {
+    grid-area: i;
+    cursor: pointer;
+    position:relative;
+    display: inline-block;
+    font-size:  2em ;
+    
+}
+img {
+    display: flex;
+}
+label {
+    display: flex inline-block;
+    margin-left: 1em;
+   justify-content: space-between;
+    font-family: 'Roboto', 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+}
