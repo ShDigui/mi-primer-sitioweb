@@ -19,27 +19,35 @@ function mostrarVehiculo() {
     contentPrincipal.appendChild(contentAuto);
     contentAuto.setAttribute("class", "mazda")
 
+
     let imagenAuto  = document.createElement("img");
     contentAuto.appendChild(imagenAuto);
     imagenAuto.setAttribute("src", auto.Imagen, );
+
+    let descmazda = document.createElement("div");
+    descmazda.setAttribute("class", "desc-mazda")
+    contentAuto.appendChild(descmazda)
 
     let marcaAuto = document.createElement("label");
     contentAuto.appendChild(marcaAuto);
     let textMarca = document.createTextNode(auto.Marca );
     marcaAuto.appendChild(textMarca);
-    marcaAuto.setAttribute("class", "label")
+    marcaAuto.setAttribute("class", "marca")
+    descmazda.appendChild(marcaAuto)
 
     let modeloAuto  =  document.createElement("label");
     contentAuto.appendChild(modeloAuto);
     let textModelo  =  document.createTextNode(auto.Modelo);
     modeloAuto.appendChild(textModelo);
-    modeloAuto.setAttribute("class", "label")
+    modeloAuto.setAttribute("class", "modelo")
+    descmazda.appendChild(modeloAuto)
 
     let precioAuto = document.createElement("label");
     contentAuto.appendChild(precioAuto);
     let textAuto = document.createTextNode(auto.Precio);
     precioAuto.appendChild(textAuto);
-    precioAuto.setAttribute("class", "label")
+    precioAuto.setAttribute("class", "presio")
+    descmazda.appendChild(precioAuto)
 
     
 }
@@ -62,21 +70,27 @@ function mostrarToyota () {
     contentToyota.appendChild(imgToyota);
     imgToyota.setAttribute("src", toyota.Imagen)
     
+    let descToyota = document.createElement("div");
+    descToyota.setAttribute("class", "desc-toyota")
+    contentToyota.appendChild(descToyota)
+
     let marcaToyota = document.createElement("label");
     contentToyota.appendChild(marcaToyota);
     let textToyotaMarca = document.createTextNode(toyota.Marca);
     marcaToyota.appendChild(textToyotaMarca);
+    descToyota.appendChild(marcaToyota)
 
     let modeloToyota = document.createElement("label");
     contentToyota.appendChild(modeloToyota);
     let textModelToyota = document.createTextNode(toyota.Modelo);
     modeloToyota.appendChild(textModelToyota);
+    descToyota.appendChild(modeloToyota)
 
     let precioToyota = document.createElement("label");
     contentToyota.appendChild(precioToyota);
     let textPrecioToyota = document.createTextNode(toyota.Precio);
     precioToyota.appendChild(textPrecioToyota);
-
+    descToyota.appendChild(precioToyota)
     
 }
  let chevrolet = new Automovil ("Chevrolet", "Camaro", "$ 274000000", "imagenes/chevrolet_camaro.jpg");
@@ -96,22 +110,28 @@ function mostarChevrolet () {
     contnedorChevrolet.appendChild(imgChevrolet);
     imgChevrolet.setAttribute("src", chevrolet.Imagen)
     
+    let descChevrolet= document.createElement("div")
+    descChevrolet.setAttribute("class", "chevrolet")
+    contnedorChevrolet.appendChild(descChevrolet)
 
     let marcaChevrolet = document.createElement("label");
     contnedorChevrolet.appendChild(marcaChevrolet);
     let textMarcaChevrolet = document.createTextNode(chevrolet.Marca);
     marcaChevrolet.appendChild(textMarcaChevrolet);
+    descChevrolet.appendChild(marcaChevrolet)
 
     let modeloChevrolet = document.createElement("label");
     contnedorChevrolet.appendChild(modeloChevrolet);
     let textModeloChevrolet = document.createTextNode(chevrolet.Modelo);
     modeloChevrolet.appendChild(textModeloChevrolet);
+    descChevrolet.appendChild(modeloChevrolet)
 
     let precioChevrolet = document.createElement("label");
     contnedorChevrolet.appendChild(precioChevrolet);
     let textPrecioChevrolet = document.createTextNode(chevrolet.Precio);
     precioChevrolet.appendChild(textPrecioChevrolet);
-    
+    descChevrolet.appendChild(precioChevrolet)
+
 }
 
 window.addEventListener("keydown", function(event) {

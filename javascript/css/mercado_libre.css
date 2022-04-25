@@ -5,7 +5,7 @@
 .encabezado {
     background: rgb(251, 235, 5);
     align-content: center;
-    width: 100% ;
+    width: 100%;
     padding: 5px;
     height: 70px;
     display: grid;
@@ -57,11 +57,47 @@ i {
 img {
     display: flex;
 }
+
+.mazda {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template: "img  desc-mazda"/
+                    auto    auto;
+    border: solid rgb(60, 60, 60);
+}
+.desc-mazda {
+    display: grid;
+    grid-area: desc-mazda;
+}
+
+.toyota{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template: "img  desc-toyota"/
+                    auto    auto;
+    border: solid rgb(60, 60, 60);
+}
+.desc-toyota {
+    display: grid;
+    grid-area: desc-toyota;
+}
+
+.chevrolet{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template: "img  desc-chevrolet"/
+                    auto    auto;
+    border: solid rgb(60, 60, 60);
+}
+.desc-chevrolet {
+    display: grid;
+    grid-area: desc-chevrolet;
+}
 label {
-    display: flex inline-block;
+    display: block;
     margin-left: 1em;
-   justify-content: space-between;
     font-family: 'Roboto', 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 400;
     font-size: 25px;
+    
 }
