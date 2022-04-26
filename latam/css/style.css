@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    padding: 15px;
+    width: 100% ;
+    background-color: #10004f;
+}
+
+/* tiquetes*/

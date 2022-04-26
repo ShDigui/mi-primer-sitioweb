@@ -111,7 +111,7 @@ function mostarChevrolet () {
     imgChevrolet.setAttribute("src", chevrolet.Imagen)
     
     let descChevrolet= document.createElement("div")
-    descChevrolet.setAttribute("class", "chevrolet")
+    descChevrolet.setAttribute("class", "desc-chevrolet")
     contnedorChevrolet.appendChild(descChevrolet)
 
     let marcaChevrolet = document.createElement("label");

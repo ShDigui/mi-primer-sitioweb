@@ -9,16 +9,16 @@
     padding: 5px;
     height: 70px;
     display: grid;
-    grid-template-columns:  1fr  1fr  1fr 1fr 1fr 1fr ;
-    grid-template: "   img-mercado-libre    buscar    buscar   buscar  buscar  buscar      i " /             
-                           90px            auto       auto     auto     auto   auto       auto;
+    grid-template-columns:  1fr  1fr  1fr  1fr  1fr 1fr 1fr;
+    grid-template:" img-mercado-libre   buscar    buscar    buscar     i " /             
+                    auto                   auto     auto      auto    auto;
         
 }
 
 .img-mercado-libre {
     grid-area: img-mercado-libre;
     display: inline-block;
-    margin-right: 2.5em;
+    margin-right: auto;
 }
 input {
     grid-area: buscar;
@@ -55,49 +55,115 @@ i {
     
 }
 img {
-    display: flex;
+    display: auto, flex;
+    justify-content: space-between;
+    margin: auto;
 }
-
+.contenido{
+    cursor: pointer;
+    margin-top: 2em;
+    margin-left: 2em;   
+}
 .mazda {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template: "img  desc-mazda"/
-                    auto    auto;
-    border: solid rgb(60, 60, 60);
+                    400px   auto;
+    margin-bottom: 2em;
+   background-color: white;
+   border: 0.0625rem solid #f0f0f0;
+   border-radius: 5px;
+   width: 700px;
 }
 .desc-mazda {
-    display: grid;
+    display: inline-block;
     grid-area: desc-mazda;
+    background-color: whitesmoke;
+    width: 300px;
+    align-content: center;
+    border-radius: 5px;
 }
 
 .toyota{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template: "img  desc-toyota"/
-                    auto    auto;
-    border: solid rgb(60, 60, 60);
+                    400px    auto;
+    margin-bottom: 2em;
+    background-color: white;
+    border: 0.0625rem solid #f0f0f0;
+    border-radius: 5px;
+    width: 700px;
 }
 .desc-toyota {
-    display: grid;
+    display: inline-block;
     grid-area: desc-toyota;
+    background-color: whitesmoke;
+    width: 300px;
+    align-content: center;
+    border-radius: 5px;
 }
 
 .chevrolet{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template: "img  desc-chevrolet"/
-                    auto    auto;
-    border: solid rgb(60, 60, 60);
+                    400px    auto;
+    margin-bottom: 2em;
+    background-color: white;
+    border: 0.0625rem solid #f0f0f0;
+    border-radius: 5px;
+    width: 700px;
 }
 .desc-chevrolet {
-    display: grid;
+    display: inline-block;
     grid-area: desc-chevrolet;
+    background-color: whitesmoke;
+    width: 300px;
+    align-content: center;
+    border-radius: 5px;
 }
 label {
+    margin-top: 25px;
+    color: black;
     display: block;
     margin-left: 1em;
     font-family: 'Roboto', 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 400;
     font-size: 25px;
     
+}
+@media only screen and (min-width:400px) and (max-width:700px) {
+    .encabezado {
+        background: rgb(251, 235, 5);
+        align-content: center;
+        width: 100%;
+        padding: 5px;
+        height: 70px;
+        display: grid;
+        grid-template-columns:  1fr  1fr 1fr;
+        grid-template:" img-mercado-libre      buscar     i " /             
+                        100px                    65%  auto;
+            
+    }
+    .contenido {
+        justify-content: center;
+    }
+    .mazda, .toyota, .chevrolet {
+        display: block;
+        margin-bottom: 50px;
+        width: 350px;
+        background-color: white;
+        border: 0.0625rem solid #f0f0f0;
+        border-radius: 5px;
+    }
+    .desc-mazda, .desc-toyota, .desc-chevrolet {
+        display: inline-block;
+        width: 100%;
+        border-radius: 5px;
+    }
+    ::placeholder {
+        font-size: .7em;
+        font-family: 'Roboto', 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
 }
