@@ -9,4 +9,36 @@
     background-color: #10004f;
 }
 
-/* tiquetes*/
+        /* tiquetes*/
+
+.content-vuelos {
+    margin-top: 2em;
+    margin-left: 2em;
+    margin-right: 2em;
+    border: 0.0625rem solid #f0f0f0;
+}
+.cont-economico {
+    padding: 25px;
+    border-bottom:0.0625rem solid #f0f0f0 ;
+}
+.desc-vuelo {
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom:0.0625rem solid #f0f0f0 ;
+}
+/*
+.origen-hora, .duracion-del-vuelo, .destino-hora-llegada {
+    display: block;
+    padding: 20px;
+}
+*/
+.pasajeros-tipos-vuelos {
+    padding:25px ;
+    display: flex;
+    justify-content: space-between;
+    border-bottom:0.0625rem solid #f0f0f0 ;
+}
+span {
+    display: block;
+}
