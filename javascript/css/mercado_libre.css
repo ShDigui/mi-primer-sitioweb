@@ -74,6 +74,8 @@ img {
    border: 0.0625rem solid #f0f0f0;
    border-radius: 5px;
    width: 700px;
+   box-shadow: rgb(16 0 79 / 12%) 0px 2px 8px 0px;
+   border-radius: 8px;
 }
 .desc-mazda {
     display: inline-block;
@@ -94,6 +96,8 @@ img {
     border: 0.0625rem solid #f0f0f0;
     border-radius: 5px;
     width: 700px;
+    box-shadow: rgb(16 0 79 / 12%) 0px 2px 8px 0px;
+    border-radius: 8px;
 }
 .desc-toyota {
     display: inline-block;
@@ -114,6 +118,8 @@ img {
     border: 0.0625rem solid #f0f0f0;
     border-radius: 5px;
     width: 700px;
+    box-shadow: rgb(16 0 79 / 12%) 0px 2px 8px 0px;
+    border-radius: 8px;
 }
 .desc-chevrolet {
     display: inline-block;

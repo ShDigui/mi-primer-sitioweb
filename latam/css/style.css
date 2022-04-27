@@ -15,30 +15,96 @@
     margin-top: 2em;
     margin-left: 2em;
     margin-right: 2em;
+    margin-bottom: 2em;
     border: 0.0625rem solid #f0f0f0;
-}
-.cont-economico {
-    padding: 25px;
-    border-bottom:0.0625rem solid #f0f0f0 ;
+    box-shadow: rgb(16 0 79 / 12%) 0px 2px 8px 0px;
+    border-radius: 8px;
+
 }
 .desc-vuelo {
-    padding: 50px;
-    display: flex;
-    justify-content: space-between;
-    border-bottom:0.0625rem solid #f0f0f0 ;
-}
-/*
-.origen-hora, .duracion-del-vuelo, .destino-hora-llegada {
-    display: block;
     padding: 20px;
-}
-*/
-.pasajeros-tipos-vuelos {
-    padding:25px ;
     display: flex;
     justify-content: space-between;
     border-bottom:0.0625rem solid #f0f0f0 ;
+    
 }
-span {
+.cont-economico {
+    display: flex;
+    border-top-left-radius: 8px;
+    overflow: hidden;
+}
+.origen-hora,   .destino-hora-llegada{
     display: block;
+    
+}
+.duracion-del-vuelo {
+    display: block;
+    
+}
+.tipos-vuelos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px;
+}
+.pasajero-vuelos {
+    display: block;
+  
+}
+        /*span definicion tikets*/
+
+.span-economico, .recomendado{
+    min-width: 100px;
+    padding: 10px;
+    position: relative;
+    left: -8px;
+    font-size: 20px;
+    line-height: 1;
+    color: rgb(255, 255, 255);
+    background-color: rgb(17, 131, 124);
+    clip-path: polygon(calc(0% + 10px) 0px, 100% 0px, calc(100% - 10px) 100%, 0px 100%);
+}
+.recomendado {
+    border-radius: 0px 0px 60px;
+}
+.hora-salida, .llegada-vuelo {
+    display: flex;
+    flex-direction:row;
+    font-size: 30px;
+    color: rgb(27, 0, 136);
+}
+.precio {
+    font-size: 20px;
+    color: rgb(27, 0, 136);
+}
+.duracion-vuelo {
+    font-weight: normal;
+    font-size: 18px;
+    color: rgb(92, 92, 92);
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+.vuelo-duracion {
+    font-size: 15px;
+    color: rgb(48, 48, 48);
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+.origen-vuelo, .destino-vuelo {
+    font-size: 20px;
+    font-style: normal;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    color: rgb(48, 48, 48);
+}
+.destino-vuelo {
+    margin-left: auto;
+}
+.vuelo-pasajeros {
+    font-size: 15px;
+    color: rgb(17, 131, 124);
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+.tipo-vuelo {
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    color: rgb(70, 88, 223);
+    cursor: pointer;
 }

@@ -1,7 +1,9 @@
 class datosVuelos {
-    constructor (economia, precio, origenVuelos, horaSalida, textDuracion, duracionVuelo, destinoVuelos, horaLlegada, tipoVuelo) {
+    constructor (economia, precio, origenVuelos, horaSalida, textDuracion, duracionVuelo, destinoVuelos, horaLlegada, tipoVuelo, recomendado, pasajeros) {
         this.economia=economia;
+        this.recomendado=recomendado;
         this.precio=precio;
+        this.pasajeros=pasajeros;
         this.origenVuelos=origenVuelos;
         this.horaSalida=horaSalida;
         this.textDuracion=textDuracion;
@@ -15,39 +17,88 @@ class datosVuelos {
 let vuelo = [{
     
     "economia":"Màs econòmico",
+    "recomendado":"Màs recomendado",
+    "pasajeros":"Adulto desde",
     "precio":"COP 205.480",
-    "origenVuelos":"BGT",
+    "origenVuelos":"Bogota",
     "horaSalida":"7:10 a.m",
-    "textDuracion":"duraciòn",
-    "duracionVuelo":"1 h 30 min",
-    "destinoVuelos":"CTG",
+    "textDuracion":"Duraciòn ",
+    "duracionVuelo":"1h 30min",
+    "destinoVuelos":"Cartagena",
+    "horaLlegada":"8:40 a.m",
+    "tipoVuelo":"Directo*",
+},{
+    "economia":"Màs econòmico",
+    "recomendado":"Màs rapido",
+    "pasajeros":"Adulto desde",
+    "precio":"COP 250.000",
+    "origenVuelos":"Medellin",
+    "horaSalida":"6:10 a.m",
+    "textDuracion":"Duraciòn ",
+    "duracionVuelo":"1h 30min",
+    "destinoVuelos":"Cali",
+    "horaLlegada":"7:40 a.m",
+    "tipoVuelo":"Directo*",
+},{
+    "economia":"Màs econòmico",
+    "recomendado":"Màs recomendado",
+    "pasajeros":"Adulto desde  ",
+    "precio":"COP 210.480",
+    "origenVuelos":"Cali",
+    "horaSalida":"7:10 p.m",
+    "textDuracion":"Duraciòn ",
+    "duracionVuelo":"1h 30min",
+    "destinoVuelos":"Medellin",
     "horaLlegada":"8:40 p.m",
-    "tipoVuelo":"Directo",
-}];
+    "tipoVuelo":"Directo*",
+},{
+    "economia":"Màs econòmico",
+    "recomendado":"Màs rapido",
+    "pasajeros":"Adulto desde  ",
+    "precio":"COP 205.480",
+    "origenVuelos":"Cartagena",
+    "horaSalida":"5:10 a.m",
+    "textDuracion":"Duraciòn ",
+    "duracionVuelo":"1h 30min",
+    "destinoVuelos":"Bogota",
+    "horaLlegada":"6:40 a.m",
+    "tipoVuelo":"Directo*",
+}
+];
 
 function mostrarVuelos () {
-    cargarVuelos (vuelo[0].economia, vuelo[0].precio, vuelo[0].origenVuelos, vuelo[0].horaSalida, vuelo[0].textDuracion, vuelo[0].duracionVuelo, vuelo[0].destinoVuelos, vuelo[0].horaLlegada,  vuelo[0].tipoVuelo);
-    cargarVuelos (vuelo[1].economia, vuelo[1].precio, vuelo[1].origenVuelos, vuelo[1].horaSalida, vuelo[1].textDuracion, vuelo[1].duracionVuelo, vuelo[1].destinoVuelos, vuelo[1].horaLlegada,  vuelo[1].tipoVuelo);
-    cargarVuelos (vuelo[2].economia, vuelo[2].precio, vuelo[2].origenVuelos, vuelo[2].horaSalida, vuelo[2].textDuracion, vuelo[2].duracionVuelo, vuelo[2].destinoVuelos, vuelo[2].horaLlegada,  vuelo[2].tipoVuelo);
-};
+    for(let i = 0; i < vuelo.length; i++){
+        cargarVuelos(vuelo[i].economia, vuelo[i].precio, vuelo[i].origenVuelos, vuelo[i].horaSalida, vuelo[i].textDuracion, vuelo[i].duracionVuelo, vuelo[i].destinoVuelos, vuelo[i].horaLlegada, vuelo[i].tipoVuelo, vuelo[i].recomendado, vuelo[i].pasajeros, vuelo[i].tipoVuelo);
+    }
+}
 
-function cargarVuelos (economia, precio, origenVuelos, horaSalida, textDuracion, duracionVuelo, destinoVuelos, horaLlegada,  tipoVuelo){
+function cargarVuelos (economia, precio, origenVuelos, horaSalida, textDuracion, duracionVuelo, destinoVuelos, horaLlegada,  tipoVuelo, recomendado, pasajeros){
   
         //contenedor principal         
 
-    let contentVuelos = document.getElementById("vuelos");
-    contentVuelos.setAttribute("class", "content-vuelos");
+    let contentPrincipal = document.getElementById("vuelos");
+    let contentVuelos = document.createElement("div");
+    contentPrincipal.appendChild(contentVuelos);
+    contentVuelos.setAttribute("class", "content-vuelos")
 
         //contenedor economia
 
     let economico = document.createElement("div");
     economico.setAttribute("class", "cont-economico");
     contentVuelos.appendChild(economico);
+        //economia
     let textEconomico = document.createElement("span");
     textEconomico.setAttribute("class", "span-economico")
     economico.appendChild(textEconomico);
     let defEconomico= document.createTextNode(economia)
     textEconomico.appendChild(defEconomico);
+        //Recomendado,
+    let recomendadoVuelo = document.createElement("span");
+    recomendadoVuelo.setAttribute("class", "recomendado");
+    economico.appendChild(recomendadoVuelo);
+    let textRecomendado = document.createTextNode(recomendado);
+    recomendadoVuelo.appendChild(textRecomendado);
+
 
         // contenedor descripcion del vuelo
 
@@ -61,14 +112,12 @@ function cargarVuelos (economia, precio, origenVuelos, horaSalida, textDuracion,
         //hora de salida del vuelo
     let salidaVuelo = document.createElement("span");
     salidaVuelo.setAttribute("class", "hora-salida");
-    //descVuelo.appendChild(salidaVuelo);
     let textHoraSalida = document.createTextNode(horaSalida);
     salidaVuelo.appendChild(textHoraSalida);
     origenHora.appendChild(salidaVuelo)
         //origen del vuelo
     let origen = document.createElement("span");
     origen.setAttribute("class", "origen-vuelo");
-    //descVuelo.appendChild(origen);
     let textOrigen=document.createTextNode(origenVuelos);
     origen.appendChild(textOrigen);
     origenHora.appendChild(origen);
@@ -79,14 +128,12 @@ function cargarVuelos (economia, precio, origenVuelos, horaSalida, textDuracion,
         //texto de duracion 
     let tiempoVuelo = document.createElement("span");
     tiempoVuelo.setAttribute("class", "duracion-vuelo");
-    //descVuelo.appendChild(tiempoVuelo);
     let textoDuracion = document.createTextNode(textDuracion);
     tiempoVuelo.appendChild(textoDuracion);
     duracionDelVuelo.appendChild(tiempoVuelo);
         //duracion del vuelo
-    let vueloDuracion = document.createElement("span");
+    let vueloDuracion = document.createElement("p");
     vueloDuracion.setAttribute("class","vuelo-duracion");
-    //descVuelo.appendChild(vueloDuracion);
     let testDuracion = document.createTextNode(duracionVuelo);
     vueloDuracion.appendChild(testDuracion);
     duracionDelVuelo.appendChild(vueloDuracion);
@@ -97,23 +144,22 @@ function cargarVuelos (economia, precio, origenVuelos, horaSalida, textDuracion,
           //hora de llegada del vuelo 
     let llegadaVuelo = document.createElement("span");
     llegadaVuelo.setAttribute("class", "llegada-vuelo");
-    //descVuelo.appendChild(llegadaVuelo);
     let textLlegada = document.createTextNode(horaLlegada);
     llegadaVuelo.appendChild(textLlegada);
     destinoHoraLlegada.appendChild(llegadaVuelo);
         //destino del vuelo
     let destino = document.createElement("span");
     destino.setAttribute("class", "destino-vuelo");
-    //descVuelo.appendChild(destino);
     let textDestino = document.createTextNode(destinoVuelos);
     destino.appendChild(textDestino);
-    destinoHoraLlegada.appendChild(destino)
-      
+    destinoHoraLlegada.appendChild(destino);
+
        
-        //contenedor tipo y pasajeros el vuelo
+
+        //contenedor tipo 
     
     let pasajeroTipoVUelos = document.createElement("div");
-    pasajeroTipoVUelos.setAttribute("class", "pasajeros-tipos-vuelos");
+    pasajeroTipoVUelos.setAttribute("class", "tipos-vuelos");
     contentVuelos.appendChild(pasajeroTipoVUelos);
         //tipo
     let tipoVuelos = document.createElement("span");
@@ -121,12 +167,24 @@ function cargarVuelos (economia, precio, origenVuelos, horaSalida, textDuracion,
     pasajeroTipoVUelos.appendChild(tipoVuelos);
     let textTipo = document.createTextNode(tipoVuelo);
     tipoVuelos.appendChild(textTipo);
-         //precio
+       
+        //contenedor precio y pasajeros
+    
+    let pasajeroVuelos = document.createElement("div");
+    pasajeroVuelos.setAttribute("class", "pasajero-vuelos");
+    pasajeroTipoVUelos.appendChild(pasajeroVuelos);
+        //pasajeros
+    let vueloPasajeros = document.createElement("p");
+    vueloPasajeros.setAttribute("class", "vuelo-pasajeros");
+    pasajeroVuelos.appendChild(vueloPasajeros);
+    let textPasajeros = document.createTextNode(pasajeros);
+    vueloPasajeros.appendChild(textPasajeros);
+        //precio
     let cntPrecio = document.createElement("span");
     cntPrecio.setAttribute("class", "precio");
-    pasajeroTipoVUelos.appendChild(cntPrecio);
+    pasajeroVuelos.appendChild(cntPrecio);
     let textPrecio = document.createTextNode(precio)
-    cntPrecio.appendChild(textPrecio);
+    cntPrecio.appendChild(textPrecio);   
 };
 
 
