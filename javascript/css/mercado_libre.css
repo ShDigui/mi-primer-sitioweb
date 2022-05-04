@@ -68,7 +68,7 @@ img {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template: "img  desc-mazda"/
-                    400px   auto;
+                   auto   auto;
     margin-bottom: 2em;
    background-color: white;
    border: 0.0625rem solid #f0f0f0;
@@ -90,11 +90,11 @@ img {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template: "img  desc-toyota"/
-                    400px    auto;
+                   auto   auto;
     margin-bottom: 2em;
     background-color: white;
     border: 0.0625rem solid #f0f0f0;
-    border-radius: 5px;
+  /*  border-radius: 5px; */
     width: 700px;
     box-shadow: rgb(16 0 79 / 12%) 0px 2px 8px 0px;
     border-radius: 8px;
@@ -103,7 +103,7 @@ img {
     display: inline-block;
     grid-area: desc-toyota;
     background-color: whitesmoke;
-    width: 300px;
+  /*  width: 300px; */
     align-content: center;
     border-radius: 5px;
 }
@@ -112,12 +112,12 @@ img {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template: "img  desc-chevrolet"/
-                    400px    auto;
+                    auto   auto;
     margin-bottom: 2em;
     background-color: white;
     border: 0.0625rem solid #f0f0f0;
     border-radius: 5px;
-    width: 700px;
+   /* width: 700px;*/
     box-shadow: rgb(16 0 79 / 12%) 0px 2px 8px 0px;
     border-radius: 8px;
 }
@@ -125,7 +125,7 @@ img {
     display: inline-block;
     grid-area: desc-chevrolet;
     background-color: whitesmoke;
-    width: 300px;
+    /*width: 300px;*/
     align-content: center;
     border-radius: 5px;
 }
@@ -138,38 +138,4 @@ label {
     font-weight: 400;
     font-size: 25px;
     
-}
-@media only screen and (min-width:400px) and (max-width:700px) {
-    .encabezado {
-        background: rgb(251, 235, 5);
-        align-content: center;
-        width: 100%;
-        padding: 5px;
-        height: 70px;
-        display: grid;
-        grid-template-columns:  1fr  1fr 1fr;
-        grid-template:" img-mercado-libre      buscar     i " /             
-                        100px                    65%  auto;
-            
-    }
-    .contenido {
-        justify-content: center;
-    }
-    .mazda, .toyota, .chevrolet {
-        display: block;
-        margin-bottom: 50px;
-        width: 350px;
-        background-color: white;
-        border: 0.0625rem solid #f0f0f0;
-        border-radius: 5px;
-    }
-    .desc-mazda, .desc-toyota, .desc-chevrolet {
-        display: inline-block;
-        width: 100%;
-        border-radius: 5px;
-    }
-    ::placeholder {
-        font-size: .7em;
-        font-family: 'Roboto', 'Open Sans', 'Helvetica Neue', sans-serif;
-    }
 }
