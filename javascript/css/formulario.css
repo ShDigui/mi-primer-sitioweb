@@ -8,24 +8,20 @@ table {
     /*
     background-color: rgba(64, 64, 64, 0.329);*/
 }
-label {
-    align-items: flex-start;
-    margin-left: 5px;
-}
+
+
 input {
     padding: 5px;
     border-radius: 5px;
     margin-left: 5px;
 }
-.desc_product {
-    margin-left: 3.5em;
-}
-.valor_product {
-    margin-left: 2.5em;
+.formulario {
+    display: auto;
+    width: 650px;
 }
 .content {
-    width: 900px;
-    display: block;
+    width: 700px;
+    display: auto;
     margin:  50px auto ;
     font-family:  'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
      
@@ -54,6 +50,4 @@ td {
     font-size: 20px;
     font-weight: 450;
     border-radius: 20px;
-   /* background-color: rgba(64, 64, 64, 0.52);
-    */
 }
