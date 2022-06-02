@@ -29,10 +29,11 @@ h3 {
 }
 .imagen {
     grid-area: imagen;
-    position: fixed;
+    position: absolute;
     display: auto;
     cursor: pointer;
-    top: 170px;
+    bottom: 170px;
+    left: 10px;
 }
 img {
     border-radius: 5%;
@@ -67,7 +68,7 @@ img {
     position: absolute;
     cursor:pointer;
     border-radius: auto; 
-    
+    width: 200px;   
 }
 .restar {
     text-align: center;
@@ -91,9 +92,9 @@ img {
 
 .eliminar-guardar {
     display: auto;
-    position: fixed ;
-    top: 480px;
-    left: 100px;
+    position: absolute ;
+    top: 470px;
+    left: 80px;
 }
 @media only screen and (max-width:750px), (min-width:400px) {
     .contenedor {
