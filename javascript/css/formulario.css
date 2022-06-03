@@ -59,7 +59,7 @@ td {
 @media only screen and (max-width: 550px){
         .content {
             display: flex;
-            justify-content: center;
+            justify-content:space-between;
         }
         .formulario {
             display: auto;
@@ -69,16 +69,16 @@ td {
         .unid_poroduct {
             position: absolute;
             top: 270px;
-            left: 180px;
+            left: 25px;
         }
         .unidadStock {
             position: absolute;
             top: 270px;
-            left: 320px;
+            left: 180px;
         }
         .position{
             position: absolute;
-            left: 320px;
+            left: 180px;
         }
         .btn-cargar-producto {
             display: auto;
