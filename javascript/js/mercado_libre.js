@@ -6,7 +6,7 @@ class Automovil {
         this.Imagen = imagen;
     }
 }
-let auto = new Automovil ("mazda 3", "Touring", "$ 5500000000", "imagenes/mazda-3.jpg");
+let auto = new Automovil ("mazda 3", "Touring", "$ 550.000.000", "imagenes/mazda-3.jpg");
 
 function validarMazda () {
     alert(auto.Marca + "" + auto.Modelo + ""  + " El automovil que necesitas¡¡");
@@ -19,10 +19,11 @@ function mostrarVehiculo() {
     contentPrincipal.appendChild(contentAuto);
     contentAuto.setAttribute("class", "mazda")
 
-
+   
     let imagenAuto  = document.createElement("img");
     contentAuto.appendChild(imagenAuto);
-    imagenAuto.setAttribute("src", auto.Imagen, );
+    imagenAuto.setAttribute("src", auto.Imagen );
+    imagenAuto.setAttribute( "class", "img_car")
 
     let descmazda = document.createElement("div");
     descmazda.setAttribute("class", "desc-mazda")
@@ -69,7 +70,8 @@ function mostrarToyota () {
     let imgToyota = document.createElement("img");
     contentToyota.appendChild(imgToyota);
     imgToyota.setAttribute("src", toyota.Imagen)
-    
+    imgToyota.setAttribute( "class", "img_car");
+
     let descToyota = document.createElement("div");
     descToyota.setAttribute("class", "desc-toyota")
     contentToyota.appendChild(descToyota)
@@ -93,7 +95,7 @@ function mostrarToyota () {
     descToyota.appendChild(precioToyota)
     
 }
- let chevrolet = new Automovil ("Chevrolet", "Camaro", "$ 274000000", "imagenes/chevrolet_camaro.jpg");
+ let chevrolet = new Automovil ("Chevrolet", "Camaro", "$ 274.000.000", "imagenes/chevrolet_camaro.jpg");
  function validarChevrolet() {
      alert (chevrolet.Marca + "" + chevrolet.Modelo + "" + "El auto mas eficaz en la carretera¡¡")
 
@@ -108,7 +110,8 @@ function mostarChevrolet () {
 
     let imgChevrolet = document.createElement("img");
     contnedorChevrolet.appendChild(imgChevrolet);
-    imgChevrolet.setAttribute("src", chevrolet.Imagen)
+    imgChevrolet.setAttribute("src", chevrolet.Imagen);
+    imgChevrolet.setAttribute( "class", "img_car")
     
     let descChevrolet= document.createElement("div")
     descChevrolet.setAttribute("class", "desc-chevrolet")

@@ -81,6 +81,9 @@ img {
     cursor: pointer;
     border-radius: 5px;
 }
+.img {
+    display: auto;
+}
 @media only screen and (max-width:750px), (min-width:400px) {
     .contenedor {
         display: grid;

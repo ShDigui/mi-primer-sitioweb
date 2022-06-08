@@ -6,6 +6,7 @@
     background: rgb(251, 235, 5);
     align-content: center;
     width: 100%;
+    bottom: 88%;
     padding: 5px;
     height: 70px;
     display: grid;
@@ -55,15 +56,23 @@ i {
     
 }
 img {
-    display: auto, flex;
-    justify-content: space-between;
-    margin: auto;
+    display: auto;
 }
 .contenido{
     cursor: pointer;
-    margin-top: 2em;
-    margin-left: 2em;   
+    margin-top:  1em;
+    margin-left: 1em;   
+
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    vertical-align: top;
+    white-space: nowrap;
 }
+
 .mazda {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -73,15 +82,16 @@ img {
    background-color: white;
    border: 0.0625rem solid #f0f0f0;
    border-radius: 5px;
-   width: 700px;
+   width: 500px;
    box-shadow: rgb(16 0 79 / 12%) 0px 2px 8px 0px;
    border-radius: 8px;
+   
 }
 .desc-mazda {
-    display: inline-block;
+    display: grid;
     grid-area: desc-mazda;
     background-color: whitesmoke;
-    width: 300px;
+    width: auto;
     align-content: center;
     border-radius: 5px;
 }
@@ -94,16 +104,25 @@ img {
     margin-bottom: 2em;
     background-color: white;
     border: 0.0625rem solid #f0f0f0;
+<<<<<<< HEAD
   /*  border-radius: 5px; */
     width: 700px;
+=======
+    border-radius: 5px; 
+    width: 500px;
+>>>>>>> 1be71b36daeefef09d764e576c8f4d886a31fddf
     box-shadow: rgb(16 0 79 / 12%) 0px 2px 8px 0px;
     border-radius: 8px;
 }
 .desc-toyota {
-    display: inline-block;
+    display: grid;
     grid-area: desc-toyota;
     background-color: whitesmoke;
+<<<<<<< HEAD
   /*  width: 300px; */
+=======
+    width: auto;
+>>>>>>> 1be71b36daeefef09d764e576c8f4d886a31fddf
     align-content: center;
     border-radius: 5px;
 }
@@ -117,15 +136,23 @@ img {
     background-color: white;
     border: 0.0625rem solid #f0f0f0;
     border-radius: 5px;
+<<<<<<< HEAD
    /* width: 700px;*/
+=======
+    width: 500px;
+>>>>>>> 1be71b36daeefef09d764e576c8f4d886a31fddf
     box-shadow: rgb(16 0 79 / 12%) 0px 2px 8px 0px;
     border-radius: 8px;
 }
 .desc-chevrolet {
-    display: inline-block;
+    display: grid;
     grid-area: desc-chevrolet;
     background-color: whitesmoke;
+<<<<<<< HEAD
     /*width: 300px;*/
+=======
+    width: auto;
+>>>>>>> 1be71b36daeefef09d764e576c8f4d886a31fddf
     align-content: center;
     border-radius: 5px;
 }
@@ -133,9 +160,99 @@ label {
     margin-top: 25px;
     color: black;
     display: block;
-    margin-left: 1em;
     font-family: 'Roboto', 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 400;
     font-size: 25px;
     
+<<<<<<< HEAD
 }
+=======
+}
+
+  
+  @media only screen and (max-width: 550px){
+    .mazda, .chevrolet, .toyota {
+        width: 250px;
+    }
+  .img_car {
+      width: 250px;
+  }
+  label {
+      margin-top: 10px;
+      font-weight: 300;
+      font-size: 20px;
+  }
+  .encabezado {
+      display: grid;
+  grid-template-columns:  1fr  1fr;
+  grid-template:" img-mercado-libre   buscar  i " /             
+                  auto                   auto auto;
+  }
+  input {
+      grid-area: buscar;
+      outline: none;
+      border: 2px rgb(25, 25, 25);
+      cursor: pointer;
+      height: 45px;
+  }
+  ::placeholder {
+      text-align: center;
+      font-family: 'Roboto', 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: .9em;
+  }
+  .buscar {
+      grid-area:buscar;
+      margin-top: 10px;
+      margin-left: 10px;
+      margin-right: 5px;
+      align-content: center;
+      width: auto;
+      border-radius: 5px;
+      font-family: 'Roboto', 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: .9em ;
+  }
+  }
+  /*
+  @media only screen and (max-width: 450px){
+      .mazda, .chevrolet, .toyota {
+          width: 250px;
+      }
+    .img_car {
+        width: 250px;
+    }
+    label {
+        margin-top: 10px;
+        font-weight: 300;
+        font-size: 20px;
+    }
+    .encabezado {
+        display: grid;
+    grid-template-columns:  1fr  1fr;
+    grid-template:" img-mercado-libre   buscar  i " /             
+                    auto                   auto auto;
+    }
+    input {
+        grid-area: buscar;
+        outline: none;
+        border: 2px rgb(25, 25, 25);
+        cursor: pointer;
+        height: 45px;
+    }
+    ::placeholder {
+        text-align: center;
+        font-family: 'Roboto', 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: .9em;
+    }
+    .buscar {
+        grid-area:buscar;
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 5px;
+        align-content: center;
+        width: auto;
+        border-radius: 5px;
+        font-family: 'Roboto', 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: .9em ;
+    }
+  }
+>>>>>>> 1be71b36daeefef09d764e576c8f4d886a31fddf
