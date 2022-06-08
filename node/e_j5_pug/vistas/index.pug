@@ -1,0 +1,40 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Mi  Primer Pug
+    body 
+        div.content
+            form
+                fieldset 
+                    div.menu 
+                        nav.title 
+                            h1= "Formulario en PUG"
+                    div.formulario_pug 
+                        div.nombres
+                            label.name="introdusca su nombre"
+                            br 
+                            input.input_name(type="text")
+                            br
+                            label.apellido="introdusca sus apellidos"
+                            br
+                            input.input_apellido(type="text",)
+                            br
+                        div.necesidad 
+                            label="seleccione el lenguaje de programacion de su preferencia"
+                            br
+                            select.tema_user(name="tema") 
+                                option="click para seleccionar"
+                                option="Javascript"
+                                option="Java"
+                                option="Php"
+                                option="Phyton" 
+                        div.
+                        div.opinion_usuario 
+                            br
+                            label.opinion= "De su opinion aqui"
+                            br
+                            textarea.opinion_user(name="opinion", cols="22", rows="5")= placeholder="prueba!"
+                        
