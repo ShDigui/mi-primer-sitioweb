@@ -5,35 +5,35 @@ table {
     align-items: center;
     margin: 0 auto;
     border-collapse: collapse;
-    /*
-    background-color: rgba(64, 64, 64, 0.329);*/
 }
-label {
-    align-items: flex-start;
-    margin-left: 5px;
+.position {
+    display: auto;
+    left: 450px;
 }
+
 input {
     padding: 5px;
     border-radius: 5px;
     margin-left: 5px;
 }
-.desc_product {
-    margin-left: 3.5em;
-}
-.valor_product {
-    margin-left: 2.5em;
+.formulario {
+    display: auto;
+    width: 650px;
 }
 .content {
-    width: 900px;
-    display: block;
+    width: 700px;
+    display: auto;
     margin:  50px auto ;
     font-family:  'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
      
 }
 fieldset {
    border-radius: 25px;
+   display: auto;
 }
 .table-style {
+
+    border-radius: 5px;
     border: 1px solid black ;
     padding: 10px;
 }
@@ -48,12 +48,48 @@ td {
     border: 1px solid black;
 }
 .btn-cargar-producto {
+    display: auto;
     width: 100%;
     cursor: pointer;
     padding: 10px;
     font-size: 20px;
     font-weight: 450;
     border-radius: 20px;
-   /* background-color: rgba(64, 64, 64, 0.52);
-    */
+}
+@media only screen and (max-width: 550px){
+        .content {
+            display: flex;
+            justify-content:space-between;
+        }
+        .formulario {
+            display: auto;
+            width: 100px;
+            height: 250px;
+        }
+        .unid_poroduct {
+            position: absolute;
+            top: 270px;
+            left: 25px;
+        }
+        .unidadStock {
+            position: absolute;
+            top: 270px;
+            left: 180px;
+        }
+        .position{
+            position: absolute;
+            left: 180px;
+        }
+        .btn-cargar-producto {
+            display: auto;
+            position: absolute;
+            top: 320px;
+            width: 320px;
+        }
+        h1 {
+            text-align: center;
+        }
+        fieldset{
+            width: 350px;
+        }
 }
